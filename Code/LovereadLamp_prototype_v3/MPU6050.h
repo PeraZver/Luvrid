@@ -49,7 +49,7 @@ typedef union accel_t_gyro_union
 };
 
 
-#define MPU6050_I2C_ADDRESS 0x69 // Default I2C address for the MPU-6050 is 0x68.
+#define MPU6050_I2C_ADDRESS 0x69 // Depending on the pin.
 
 // Register names according to the datasheet.
 // "MPU-6000 and MPU-6050 Register Map
