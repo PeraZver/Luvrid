@@ -1,0 +1,12 @@
+
+
+Notes: change all 0.1 uF to 0402
+       change all 1 uF to 0603
+       change 18 pF to 0603 - 18 pF is series of 100 pF and 22 pF (solder one next to the other)
+       change 2.2 nF to 0402
+       change 4.7 uF to 0402
+       change 10 kOhm to 0603
+       change 22 Ohm to 0603      
+	
+	
+			
