@@ -12474,6 +12474,7 @@ For 350 mA, Rs = 7Ω</text>
 Version 1.0
 
 Pero 2015</text>
+<text x="327.66" y="66.04" size="6.4516" layer="91">Rs IS BETWEEN VIN AND SET!!!!!</text>
 </plain>
 <instances>
 <instance part="U1" gate="G$1" x="248.92" y="25.4"/>

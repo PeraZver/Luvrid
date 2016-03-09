@@ -12477,7 +12477,10 @@ Pero 2015</text>
 <text x="327.66" y="66.04" size="6.4516" layer="91">AL8805 doesn't work
 with Vin &lt; 6V! 
 Change it to CAT4139</text>
-<text x="189.484" y="19.304" size="1.778" layer="91">for 3.3V clock should be max 8MHz!!!</text>
+<text x="179.324" y="-13.716" size="3.81" layer="91">for 3.3V, XTAL 
+should be max 8MHz!!!</text>
+<text x="355.6" y="-55.88" size="1.778" layer="91">Tie AD0 somewhere!
+(to pin 8 is the best)</text>
 </plain>
 <instances>
 <instance part="U1" gate="G$1" x="248.92" y="25.4"/>

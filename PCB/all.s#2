@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.2.0">
+<eagle version="7.4.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -12474,7 +12474,9 @@ For 350 mA, Rs = 7Ω</text>
 Version 1.0
 
 Pero 2015</text>
-<text x="327.66" y="66.04" size="6.4516" layer="91">Rs IS BETWEEN VIN AND SET!!!!!</text>
+<text x="327.66" y="66.04" size="6.4516" layer="91">AL8805 doesn't work
+with Vin &lt; 6V! 
+Change it to CAT4139</text>
 <text x="189.484" y="19.304" size="1.778" layer="91">for 3.3V clock should be max 8MHz!!!</text>
 </plain>
 <instances>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.4.0">
+<eagle version="7.3.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -12479,8 +12479,9 @@ with Vin &lt; 6V!
 Change it to CAT4139</text>
 <text x="179.324" y="-13.716" size="3.81" layer="91">for 3.3V, XTAL 
 should be max 8MHz!!!</text>
-<text x="355.6" y="-55.88" size="1.778" layer="91">Tie AD0 somewhere!
-(to pin 8 is the best)</text>
+<text x="353.06" y="-60.96" size="1.778" layer="91">Tie AD0 somewhere!
+(to pin 8 is the best)
+Otherwise, the chip won't work!</text>
 </plain>
 <instances>
 <instance part="U1" gate="G$1" x="248.92" y="25.4"/>
