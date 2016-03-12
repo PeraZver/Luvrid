@@ -5,7 +5,7 @@ boolean vertical = LOW;    // Indicates if the lamp is set completely vertical o
 bool shake = 0;
 uint32_t color = 0x000000FF; // 32-bit color code, upper 8 bits, nothing, next 8 bits: RED, next 8 bits: GREEN, lowest 8 bits: BLUE
 
-uint8_t LampIntensity = 0;         // Lamp intensity control
+int16_t LampIntensity = 0;         // Lamp intensity control
 int plane_position = 0;        // Rotation angle in x-y plane
 
 void TurnLampOn(int angle) {
@@ -16,27 +16,31 @@ void TurnLampOn(int angle) {
 
   if ((angle >= INCLINED_15DEG) && (angle < 117)) {      // When lamp is moving from horizontal to vertical position, light intensity rises proportionally to 50% of the maximum
     if (!vertical) {
-      LampIntensity = (angle>>1);
+      LampIntensity = (angle>>0);
       plane_position = 0;
       }
     else 
        if (angle <= 100){    // Arbitrarily chosen value at the border of region where LampIntensity = angle>>1 and region where LampIntensity = angle>>1 + plane_position
            vertical = LOW;
-           LampIntensity = (angle>>1); 
+           LampIntensity = (angle>>0); 
            plane_position = 0;
        }
        else
-           LampIntensity = (angle>>1) + plane_position;
+           LampIntensity = (angle>>0) + plane_position;
   }
   
   else if ((angle >= 117) && (angle <= 150)) {           // When lamp is more or less vertically positioned, light intensity is regulated by rotation
       if (!vertical)          
           vertical = HIGH;
-      LampIntensity = (angle>>1) + plane_position;
-      if (LampIntensity >= (254))
-          LampIntensity = (254);
-      if (LampIntensity <=1)
-          LampIntensity = 1;
+      LampIntensity = (angle>>0) + plane_position;      
+      if (LampIntensity >= (255)){
+          //plane_position = 0;
+          LampIntensity = (255);
+      }
+      if (LampIntensity <= LIGHT_MIN){
+          //plane_position = 0;
+          LampIntensity = LIGHT_MIN;
+      }
   }
   
   else
@@ -49,7 +53,7 @@ void RotateLamp(int omega) {
    *  rotation angle in x-y plane */
   int rot_offset = 200;      // There is non-zero sensor output when the lamp is not rotating.
   if (( omega > rot_offset) || (omega < (~rot_offset + 1)))
-    plane_position += (omega>>8);  // scale with 2000°/s and mulitply with 10ms, equals dividing with 200 or shifting for 2^8 = 256
+    plane_position += (omega >> 7);  // scale with 2000°/s and mulitply with 10ms, equals dividing with 200 or shifting for 2^8 = 256
 //  plane_position = plane_position % 360; 
 
   if (plane_position > 255) // Make sure plane position is between -255 and 255, Optimize later
@@ -148,6 +152,7 @@ static uint32_t Wheel(byte WheelPos) {
   return strip.Color(WheelPos * 3, 255 - WheelPos * 3, 0);
 }
 
+// Values for gamma correction
 const uint8_t PROGMEM gamma[] = {
     0,  0,  0,  0,  0,  0,  0,  0,  1,  1,  1,  1,  1,  1,  1,  2,
     2,  2,  2,  2,  3,  3,  3,  3,  4,  4,  4,  4,  5,  5,  5,  6,

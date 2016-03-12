@@ -44,12 +44,12 @@ void loop()
   ColoredLamp((int_acc_z) >> 4);
   RotateLamp(int_gyro_z);           // z- component of the gyro in prototype
 
-  analogWrite(WhiteLED, pgm_read_byte(&gamma[LampIntensity]));  // PWM modulate the white LED with gamma correction
+  analogWrite(WhiteLED, pgm_read_byte(&gamma[uint8_t(LampIntensity)]));  // PWM modulate the white LED with gamma correction
 
   int_acc_z = 0;
   int_gyro_z = 0;
 
-  delay(100);
+  delay(25);
 }
 
 

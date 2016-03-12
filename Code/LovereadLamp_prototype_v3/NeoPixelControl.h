@@ -4,8 +4,9 @@
 #include <Adafruit_NeoPixel.h>  
 #include<avr/io.h>
 
-#define PIN 6                 // Ctrl output for NeoPixel RGB strip
-#define WhiteLED 11            // PWM output for white LED
+#define PIN 6               // Ctrl output for NeoPixel RGB strip
+#define WhiteLED 11         // PWM output for white LED
+#define LIGHT_MIN 20        // Minimum value for the white LED output
 // Constants
 #define INCLINED_15DEG 64>>4                // Value of z-component at 15° inclination (2048*cos(15°)=1978) ( Range +/- 16g, resolution 16 bits, signed -> 2^15 = 16g, 2^11 = 1g )
 // Shift it by 4 so that you can work with normal values, like 256
@@ -13,7 +14,7 @@
 
 
 extern Adafruit_NeoPixel strip;  // Class that deals with neopixel
-extern uint8_t LampIntensity;         // Lamp intensity control
+extern int16_t LampIntensity;         // Lamp intensity control
 extern int plane_position;        // Rotation angle in x-y plane
 extern bool shake;
 extern boolean vertical;    // Indicates if the lamp is set completely vertical or still rising.
