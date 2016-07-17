@@ -105,7 +105,7 @@ if __name__ == "__main__":
 #    if len(sys.argv)<2:
 #        print "Give serial port address as a command line argument."
 #        exit()
-    port = "COM3"
+    port = "COM12"
     try:
         ser = configure_serial(port)
         if not ser.isOpen():

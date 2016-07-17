@@ -14,19 +14,19 @@
 
 
 extern Adafruit_NeoPixel strip;  // Class that deals with neopixel
-extern int16_t LampIntensity;         // Lamp intensity control
 extern int plane_position;        // Rotation angle in x-y plane
 extern bool shake;
 extern boolean vertical;    // Indicates if the lamp is set completely vertical or still rising.
 
 extern const uint8_t gamma[];  // Declaration of gamma corecttion LUT. The value is at the bottom of this sketch
 
-void TurnLampOn(int angle);
+void ChooseLED(int angle);
+int16_t Intensity(int angle);
 void RotateLamp(int omega);
 void ColoredLamp(int angle);
 static void DetectShake(int angle);
 static void ChooseColor();
-static void ColorIntensity();
+static void ColorIntensity(int position_lamp);
 static uint32_t Wheel(byte WheelPos);
 
 

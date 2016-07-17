@@ -5,6 +5,8 @@
  *  PWM-dimmed and RGB Neopixel ring is activated. Light intensity is gamma corrected. RGB NeoPixel 
  *  ring changes its intensity depending on the plane position.
  *  
+ *  v4 has simmetricaly calculated light intensity based on vertical position for both lamp.
+ *  
  *  v3 has color selection mode which is activated after shake, and selected color can be dimmed afterwards. The whole code is modular. Gamma correction introduced.
  *  
  *  v2 uses integration to stabilize acc and gyro output.
@@ -39,12 +41,10 @@ void loop()
   MPU6050_readOut();     // Read the Acc and Gyro data from the MPU6050, and average them 16 times.
     
   PrintStuff();
-
-  TurnLampOn((int_acc_z) >> 4);     // z- component of acc is the one in prototyping test, shift it by 4 so that you can work with normal values like 128
-  ColoredLamp((int_acc_z) >> 4);
+  
+  //z- component of acc is the one in prototyping test, shift it by 4 so that you can work with normal values like 128
   RotateLamp(int_gyro_z);           // z- component of the gyro in prototype
-
-  analogWrite(WhiteLED, pgm_read_byte(&gamma[uint8_t(LampIntensity)]));  // PWM modulate the white LED with gamma correction
+  ChooseLED((int_acc_z) >> 4);
 
   int_acc_z = 0;
   int_gyro_z = 0;
@@ -96,7 +96,7 @@ void PrintStuff() {
 
   
   Serial.print("Light Intensity: ");
-  Serial.print(LampIntensity);
+  Serial.print(Intensity(abs(int_acc_z) >> 4));
   Serial.print("\n");
   Serial.print("Position in plane: ");
   Serial.print(plane_position);

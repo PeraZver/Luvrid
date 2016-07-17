@@ -5,47 +5,56 @@ boolean vertical = LOW;    // Indicates if the lamp is set completely vertical o
 bool shake = 0;
 uint32_t color = 0x000000FF; // 32-bit color code, upper 8 bits, nothing, next 8 bits: RED, next 8 bits: GREEN, lowest 8 bits: BLUE
 
-int16_t LampIntensity = 0;         // Lamp intensity control
-int plane_position = 0;        // Rotation angle in x-y plane
+int16_t plane_position = 0;        // Rotation angle in x-y plane
 
-void TurnLampOn(int angle) {
-  /*  Lamp turns on when inclined more than 15° with the dimmed light.
-   *  Light intensifies to 50% as the lamp comes to vertical position
-   *  Shift right for 3 to beacuse the light is painful*/
- // int plane = plane_position; 
+char shift = 0;   // variable to tune maximum light
 
+void ChooseLED(int angle){
+  /* Chooses which lamp (color or white will be active.*/
+  if (angle >= 0)    
+    analogWrite(WhiteLED, pgm_read_byte(&gamma[uint8_t(Intensity(angle))]));  // PWM modulate the white LED with gamma correction
+  else  
+    ColoredLamp(abs(angle));  
+}
+
+
+int16_t Intensity(int angle){
+  /* Calcultes intensity of the light depending on vertical position.*/  
   if ((angle >= INCLINED_15DEG) && (angle < 117)) {      // When lamp is moving from horizontal to vertical position, light intensity rises proportionally to 50% of the maximum
     if (!vertical) {
-      LampIntensity = (angle>>0);
       plane_position = 0;
+      return (angle >> shift);
       }
     else 
        if (angle <= 100){    // Arbitrarily chosen value at the border of region where LampIntensity = angle>>1 and region where LampIntensity = angle>>1 + plane_position
            vertical = LOW;
-           LampIntensity = (angle>>0); 
            plane_position = 0;
+           return (angle >> shift);
        }
        else
-           LampIntensity = (angle>>0) + plane_position;
+           return ((angle >> shift) + plane_position);
   }
   
   else if ((angle >= 117) && (angle <= 150)) {           // When lamp is more or less vertically positioned, light intensity is regulated by rotation
       if (!vertical)          
           vertical = HIGH;
-      LampIntensity = (angle>>0) + plane_position;      
-      if (LampIntensity >= (255)){
+    
+      if ((angle>>shift) + plane_position >= (255)){
           //plane_position = 0;
-          LampIntensity = (255);
+          return 255;
       }
-      if (LampIntensity <= LIGHT_MIN){
+      if ((angle>>shift) + plane_position <= LIGHT_MIN){
           //plane_position = 0;
-          LampIntensity = LIGHT_MIN;
+          return LIGHT_MIN;
       }
+      return (angle>>shift) + plane_position;
   }
   
   else
-      LampIntensity = 0; 
+      return 0; 
+  
 }
+
 
 void RotateLamp(int omega) {
   /* In vertical position (along the z axis) the gyro measures
@@ -54,7 +63,6 @@ void RotateLamp(int omega) {
   int rot_offset = 200;      // There is non-zero sensor output when the lamp is not rotating.
   if (( omega > rot_offset) || (omega < (~rot_offset + 1)))
     plane_position += (omega >> 7);  // scale with 2000°/s and mulitply with 10ms, equals dividing with 200 or shifting for 2^8 = 256
-//  plane_position = plane_position % 360; 
 
   if (plane_position > 255) // Make sure plane position is between -255 and 255, Optimize later
      plane_position = 255;
@@ -66,26 +74,12 @@ void ColoredLamp(int angle) {
   /*  In the upside down position, power LED turns off and colored LED turns on
    *  The color and intensity is regulated by rotation in x-y plane.
    */
-   
-  DetectShake(angle);   // Check if we have shaked the lamp
-   
-  if ((angle <= -108) && (angle >= -136) && !shake ) {         // when the lamp is upside down, it's time to turn on the colored LEDs
-    Serial.println("Color LED Mode!");
-    LampIntensity = 0;  // Turn the power LED off.
-    ColorIntensity();
-  } 
-  else if ((angle <= -108) && (angle >= -136) && shake ) {         // when the lamp is upside down, and shaked, you have 5 seconds to chose your color
-    Serial.println("Color LED Mode!");
-    LampIntensity = 0;  // Turn the power LED off.
+  Serial.println("Colored lamp!");
+  DetectShake(angle);   // Check if we have shaked the lamp  
+  if (!shake)
+    ColorIntensity(pgm_read_byte(&gamma[uint8_t(Intensity(angle))]));  
+  else   // when the lamp is upside down, and shaked, you have 5 seconds to chose your color
     ChooseColor();
-  }
-  else  {
-    Serial.println("Color LED Off");
-    for (char i = 0; i < 16; i++) {
-      strip.setPixelColor(i, 0); // Turn all pixels off
-      strip.show();
-    }
-  }
 }
 
 static void DetectShake(int angle){
@@ -107,11 +101,6 @@ static void DetectShake(int angle){
          
         TIMSK3 |= (1 << OCIE3A); // Enable CTC interrupt
         sei(); // Enable global interrupts
-        /*Serial.println(TCCR3A, BIN);
-        Serial.println(TCCR3B, BIN);
-        Serial.println(OCR3AL, BIN);        
-        Serial.println(OCR3AH, BIN);
-        Serial.println(TIFR3, BIN);*/
     }
   
 }
@@ -129,12 +118,12 @@ static void ChooseColor(){
   Serial.println("\n");
 }
 
-static void ColorIntensity(){
-  /* This function changes intensity of the NeoPixel color LED ring depending on the rotation around the z-axis*/
+static void ColorIntensity(int16_t position_lamp){
+  /* This function changes intensity of the NeoPixel color LED ring depending on the input variable position_lamp*/
   //color_brightness = ((uint32_t)abs(plane_position) << 16) | ((uint32_t)abs(plane_position) << 8) | abs(plane_position);
   for(int i=0; i<= strip.numPixels(); i++)
       strip.setPixelColor(i,color);
-  strip.setBrightness(abs(plane_position));
+  strip.setBrightness(position_lamp);
   strip.show();  
 }
 
