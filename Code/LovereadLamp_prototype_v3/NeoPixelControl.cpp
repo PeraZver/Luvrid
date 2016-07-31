@@ -74,7 +74,7 @@ void ColoredLamp(int angle) {
   /*  In the upside down position, power LED turns off and colored LED turns on
    *  The color and intensity is regulated by rotation in x-y plane.
    */
-  Serial.println("Colored lamp!");
+//  Serial.println("Colored lamp!");
   DetectShake(angle);   // Check if we have shaked the lamp  
   if (!shake)
     ColorIntensity(pgm_read_byte(&gamma[uint8_t(Intensity(angle))]));  
@@ -87,7 +87,7 @@ static void DetectShake(int angle){
      */
 
     if (abs(angle) > SHAKED){
-        Serial.println("Shake detected!!");
+//        Serial.println("Shake detected!!");
         shake = 1;   
 
         TCCR3A = 0;
@@ -108,14 +108,14 @@ static void DetectShake(int angle){
 static void ChooseColor(){
   /* This function changes the color of the NeoPixel ring by rotation around z-axis. 
      The color value is stored in 32-bit variable color */
-  Serial.println("Choose a color:");
+//  Serial.println("Choose a color:");
   for(int i=0; i<strip.numPixels(); i++) 
       strip.setPixelColor(i, Wheel((int)(plane_position) & 255));
   strip.show();
   color = strip.getPixelColor(1); // Pick up the color from the 1st pixel.
-  Serial.print("0x");
+/*  Serial.print("0x");
   Serial.print(color, HEX);
-  Serial.println("\n");
+  Serial.println("\n");*/
 }
 
 static void ColorIntensity(int16_t position_lamp){
