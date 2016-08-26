@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.6.0">
+<eagle version="7.3.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -10750,7 +10750,7 @@ Compliant</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="LIPO-BATTERY-CONNECTOR">
+<deviceset name="LIPO-BATTERY-CONNECTOR" prefix="J">
 <description>LiPo Battery connector,
 
 1 mm raster</description>
