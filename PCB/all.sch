@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.3.0">
+<eagle version="7.6.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -15020,11 +15020,9 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <part name="CS8" library="rcl" deviceset="C-EU" device="C0603" value="100nF"/>
 <part name="GND5" library="SparkFun" deviceset="GND" device=""/>
 <part name="GND23" library="SparkFun" deviceset="GND" device=""/>
-<part name="C20" library="SparkFun" deviceset="CAP_POL" device="1206" value="10μF"/>
-<part name="C21" library="SparkFun" deviceset="CAP_POL" device="1206" value="10μF"/>
+<part name="C20" library="rcl" deviceset="C-EU" device="C0603" value="10μF"/>
 <part name="CS9" library="rcl" deviceset="C-EU" device="C0603" value="100nF"/>
 <part name="GND31" library="SparkFun" deviceset="GND" device=""/>
-<part name="GND32" library="SparkFun" deviceset="GND" device=""/>
 <part name="GND33" library="SparkFun" deviceset="GND" device=""/>
 <part name="R4" library="rcl" deviceset="R-EU_" device="R0603" value="188"/>
 <part name="R9" library="rcl" deviceset="R-EU_" device="R0603" value="230"/>
@@ -15048,11 +15046,9 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <part name="CS18" library="rcl" deviceset="C-EU" device="C0603" value="100nF"/>
 <part name="GND4" library="SparkFun" deviceset="GND" device=""/>
 <part name="GND36" library="SparkFun" deviceset="GND" device=""/>
-<part name="C22" library="SparkFun" deviceset="CAP_POL" device="1206" value="10μF"/>
-<part name="C23" library="SparkFun" deviceset="CAP_POL" device="1206" value="10μF"/>
+<part name="C22" library="rcl" deviceset="C-EU" device="C0603" value="10μF"/>
 <part name="CS19" library="rcl" deviceset="C-EU" device="C0603" value="100nF"/>
 <part name="GND37" library="SparkFun" deviceset="GND" device=""/>
-<part name="GND38" library="SparkFun" deviceset="GND" device=""/>
 <part name="GND39" library="SparkFun" deviceset="GND" device=""/>
 <part name="R2" library="rcl" deviceset="R-EU_" device="R0603" value="188"/>
 <part name="R3" library="rcl" deviceset="R-EU_" device="R0603" value="230"/>
@@ -15076,11 +15072,9 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <part name="CS28" library="rcl" deviceset="C-EU" device="C0603" value="100nF"/>
 <part name="GND43" library="SparkFun" deviceset="GND" device=""/>
 <part name="GND44" library="SparkFun" deviceset="GND" device=""/>
-<part name="C25" library="SparkFun" deviceset="CAP_POL" device="1206" value="10μF"/>
-<part name="C26" library="SparkFun" deviceset="CAP_POL" device="1206" value="10μF"/>
+<part name="C25" library="rcl" deviceset="C-EU" device="C0603" value="10μF"/>
 <part name="CS29" library="rcl" deviceset="C-EU" device="C0603" value="100nF"/>
 <part name="GND45" library="SparkFun" deviceset="GND" device=""/>
-<part name="GND46" library="SparkFun" deviceset="GND" device=""/>
 <part name="GND47" library="SparkFun" deviceset="GND" device=""/>
 <part name="R12" library="rcl" deviceset="R-EU_" device="R0603" value="188"/>
 <part name="R13" library="rcl" deviceset="R-EU_" device="R0603" value="230"/>
@@ -15104,11 +15098,9 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <part name="CS38" library="rcl" deviceset="C-EU" device="C0603" value="100nF"/>
 <part name="GND51" library="SparkFun" deviceset="GND" device=""/>
 <part name="GND52" library="SparkFun" deviceset="GND" device=""/>
-<part name="C28" library="SparkFun" deviceset="CAP_POL" device="1206" value="10μF"/>
-<part name="C29" library="SparkFun" deviceset="CAP_POL" device="1206" value="10μF"/>
+<part name="C28" library="rcl" deviceset="C-EU" device="C0603" value="10μF"/>
 <part name="CS39" library="rcl" deviceset="C-EU" device="C0603" value="100nF"/>
 <part name="GND53" library="SparkFun" deviceset="GND" device=""/>
-<part name="GND54" library="SparkFun" deviceset="GND" device=""/>
 <part name="GND55" library="SparkFun" deviceset="GND" device=""/>
 <part name="R15" library="rcl" deviceset="R-EU_" device="R0603" value="188"/>
 <part name="R16" library="rcl" deviceset="R-EU_" device="R0603" value="230"/>
@@ -15144,11 +15136,6 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <sheets>
 <sheet>
 <plain>
-<text x="36.83" y="128.27" size="1.778" layer="97">Battery charger:
-MCP73831
-----------------------
-for charging current 
-of 100 mA, R6 is 10k</text>
 <text x="171.45" y="6.35" size="2.54" layer="97">Loveread Lamp
 Version 2.0
 
@@ -15657,7 +15644,6 @@ Pero 2016</text>
 <segment>
 <pinref part="U5" gate="G$1" pin="VBAT"/>
 <wire x1="57.15" y1="153.67" x2="72.39" y2="153.67" width="0.1524" layer="91"/>
-<label x="57.15" y="153.67" size="1.778" layer="95"/>
 <wire x1="74.93" y1="146.05" x2="72.39" y2="146.05" width="0.1524" layer="91"/>
 <wire x1="72.39" y1="146.05" x2="72.39" y2="153.67" width="0.1524" layer="91"/>
 <pinref part="J2" gate="G$1" pin="+"/>
@@ -15854,14 +15840,12 @@ Pero 2016</text>
 <instance part="GND5" gate="1" x="213.36" y="187.96" rot="MR0"/>
 <instance part="GND23" gate="1" x="205.74" y="187.96" rot="MR0"/>
 <instance part="C20" gate="G$1" x="240.03" y="196.85" rot="MR0"/>
-<instance part="C21" gate="G$1" x="232.41" y="196.85" rot="MR0"/>
-<instance part="CS9" gate="G$1" x="224.79" y="198.12" smashed="yes" rot="MR0">
-<attribute name="NAME" x="223.52" y="198.755" size="1.778" layer="95" rot="MR0"/>
-<attribute name="VALUE" x="217.932" y="195.707" size="1.778" layer="96" rot="MR180"/>
+<instance part="CS9" gate="G$1" x="229.87" y="198.12" smashed="yes" rot="MR0">
+<attribute name="NAME" x="228.6" y="198.755" size="1.778" layer="95" rot="MR0"/>
+<attribute name="VALUE" x="223.012" y="195.707" size="1.778" layer="96" rot="MR180"/>
 </instance>
 <instance part="GND31" gate="1" x="240.03" y="187.96" rot="MR0"/>
-<instance part="GND32" gate="1" x="232.41" y="187.96" rot="MR0"/>
-<instance part="GND33" gate="1" x="224.79" y="187.96" rot="MR0"/>
+<instance part="GND33" gate="1" x="229.87" y="187.96" rot="MR0"/>
 <instance part="R4" gate="G$1" x="254" y="147.32" rot="MR90"/>
 <instance part="R9" gate="G$1" x="275.59" y="152.4" rot="MR180"/>
 <instance part="R10" gate="G$1" x="246.38" y="190.5" rot="MR270"/>
@@ -15918,14 +15902,12 @@ Pero 2016</text>
 <instance part="GND4" gate="1" x="172.72" y="187.96"/>
 <instance part="GND36" gate="1" x="180.34" y="187.96"/>
 <instance part="C22" gate="G$1" x="146.05" y="196.85"/>
-<instance part="C23" gate="G$1" x="153.67" y="196.85"/>
-<instance part="CS19" gate="G$1" x="161.29" y="198.12" smashed="yes">
-<attribute name="NAME" x="162.56" y="198.755" size="1.778" layer="95"/>
-<attribute name="VALUE" x="168.148" y="195.707" size="1.778" layer="96" rot="R180"/>
+<instance part="CS19" gate="G$1" x="156.21" y="198.12" smashed="yes">
+<attribute name="NAME" x="157.48" y="198.755" size="1.778" layer="95"/>
+<attribute name="VALUE" x="163.068" y="195.707" size="1.778" layer="96" rot="R180"/>
 </instance>
 <instance part="GND37" gate="1" x="146.05" y="187.96"/>
-<instance part="GND38" gate="1" x="153.67" y="187.96"/>
-<instance part="GND39" gate="1" x="161.29" y="187.96"/>
+<instance part="GND39" gate="1" x="156.21" y="187.96"/>
 <instance part="R2" gate="G$1" x="132.08" y="147.32" rot="R90"/>
 <instance part="R3" gate="G$1" x="110.49" y="152.4" rot="R180"/>
 <instance part="R11" gate="G$1" x="139.7" y="190.5" rot="R270"/>
@@ -15982,14 +15964,12 @@ Pero 2016</text>
 <instance part="GND43" gate="1" x="172.72" y="88.9"/>
 <instance part="GND44" gate="1" x="180.34" y="88.9"/>
 <instance part="C25" gate="G$1" x="146.05" y="97.79"/>
-<instance part="C26" gate="G$1" x="153.67" y="97.79"/>
-<instance part="CS29" gate="G$1" x="161.29" y="99.06" smashed="yes">
-<attribute name="NAME" x="162.56" y="99.695" size="1.778" layer="95"/>
-<attribute name="VALUE" x="168.148" y="96.647" size="1.778" layer="96" rot="R180"/>
+<instance part="CS29" gate="G$1" x="156.21" y="99.06" smashed="yes">
+<attribute name="NAME" x="157.48" y="99.695" size="1.778" layer="95"/>
+<attribute name="VALUE" x="163.068" y="96.647" size="1.778" layer="96" rot="R180"/>
 </instance>
 <instance part="GND45" gate="1" x="146.05" y="88.9"/>
-<instance part="GND46" gate="1" x="153.67" y="88.9"/>
-<instance part="GND47" gate="1" x="161.29" y="88.9"/>
+<instance part="GND47" gate="1" x="156.21" y="88.9"/>
 <instance part="R12" gate="G$1" x="132.08" y="48.26" rot="R90"/>
 <instance part="R13" gate="G$1" x="110.49" y="53.34" rot="R180"/>
 <instance part="R14" gate="G$1" x="139.7" y="91.44" rot="R270"/>
@@ -16046,14 +16026,12 @@ Pero 2016</text>
 <instance part="GND51" gate="1" x="213.36" y="88.9" rot="MR0"/>
 <instance part="GND52" gate="1" x="205.74" y="88.9" rot="MR0"/>
 <instance part="C28" gate="G$1" x="240.03" y="97.79" rot="MR0"/>
-<instance part="C29" gate="G$1" x="232.41" y="97.79" rot="MR0"/>
-<instance part="CS39" gate="G$1" x="224.79" y="99.06" smashed="yes" rot="MR0">
-<attribute name="NAME" x="223.52" y="99.695" size="1.778" layer="95" rot="MR0"/>
-<attribute name="VALUE" x="217.932" y="96.647" size="1.778" layer="96" rot="MR180"/>
+<instance part="CS39" gate="G$1" x="229.87" y="99.06" smashed="yes" rot="MR0">
+<attribute name="NAME" x="228.6" y="99.695" size="1.778" layer="95" rot="MR0"/>
+<attribute name="VALUE" x="223.012" y="96.647" size="1.778" layer="96" rot="MR180"/>
 </instance>
 <instance part="GND53" gate="1" x="240.03" y="88.9" rot="MR0"/>
-<instance part="GND54" gate="1" x="232.41" y="88.9" rot="MR0"/>
-<instance part="GND55" gate="1" x="224.79" y="88.9" rot="MR0"/>
+<instance part="GND55" gate="1" x="229.87" y="88.9" rot="MR0"/>
 <instance part="R15" gate="G$1" x="254" y="48.26" rot="MR90"/>
 <instance part="R16" gate="G$1" x="275.59" y="53.34" rot="MR180"/>
 <instance part="R17" gate="G$1" x="246.38" y="91.44" rot="MR270"/>
@@ -16085,19 +16063,14 @@ Pero 2016</text>
 <wire x1="205.74" y1="190.5" x2="205.74" y2="193.04" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="C20" gate="G$1" pin="-"/>
+<pinref part="C20" gate="G$1" pin="2"/>
 <pinref part="GND31" gate="1" pin="GND"/>
 <wire x1="240.03" y1="190.5" x2="240.03" y2="191.77" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="C21" gate="G$1" pin="-"/>
-<pinref part="GND32" gate="1" pin="GND"/>
-<wire x1="232.41" y1="190.5" x2="232.41" y2="191.77" width="0.1524" layer="91"/>
-</segment>
-<segment>
 <pinref part="CS9" gate="G$1" pin="2"/>
 <pinref part="GND33" gate="1" pin="GND"/>
-<wire x1="224.79" y1="190.5" x2="224.79" y2="193.04" width="0.1524" layer="91"/>
+<wire x1="229.87" y1="190.5" x2="229.87" y2="193.04" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="R4" gate="G$1" pin="1"/>
@@ -16143,19 +16116,14 @@ Pero 2016</text>
 <wire x1="180.34" y1="190.5" x2="180.34" y2="193.04" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="C22" gate="G$1" pin="-"/>
+<pinref part="C22" gate="G$1" pin="2"/>
 <pinref part="GND37" gate="1" pin="GND"/>
 <wire x1="146.05" y1="190.5" x2="146.05" y2="191.77" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="C23" gate="G$1" pin="-"/>
-<pinref part="GND38" gate="1" pin="GND"/>
-<wire x1="153.67" y1="190.5" x2="153.67" y2="191.77" width="0.1524" layer="91"/>
-</segment>
-<segment>
 <pinref part="CS19" gate="G$1" pin="2"/>
 <pinref part="GND39" gate="1" pin="GND"/>
-<wire x1="161.29" y1="190.5" x2="161.29" y2="193.04" width="0.1524" layer="91"/>
+<wire x1="156.21" y1="190.5" x2="156.21" y2="193.04" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="R2" gate="G$1" pin="1"/>
@@ -16201,19 +16169,14 @@ Pero 2016</text>
 <wire x1="180.34" y1="91.44" x2="180.34" y2="93.98" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="C25" gate="G$1" pin="-"/>
+<pinref part="C25" gate="G$1" pin="2"/>
 <pinref part="GND45" gate="1" pin="GND"/>
 <wire x1="146.05" y1="91.44" x2="146.05" y2="92.71" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="C26" gate="G$1" pin="-"/>
-<pinref part="GND46" gate="1" pin="GND"/>
-<wire x1="153.67" y1="91.44" x2="153.67" y2="92.71" width="0.1524" layer="91"/>
-</segment>
-<segment>
 <pinref part="CS29" gate="G$1" pin="2"/>
 <pinref part="GND47" gate="1" pin="GND"/>
-<wire x1="161.29" y1="91.44" x2="161.29" y2="93.98" width="0.1524" layer="91"/>
+<wire x1="156.21" y1="91.44" x2="156.21" y2="93.98" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="R12" gate="G$1" pin="1"/>
@@ -16259,19 +16222,14 @@ Pero 2016</text>
 <wire x1="205.74" y1="91.44" x2="205.74" y2="93.98" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="C28" gate="G$1" pin="-"/>
+<pinref part="C28" gate="G$1" pin="2"/>
 <pinref part="GND53" gate="1" pin="GND"/>
 <wire x1="240.03" y1="91.44" x2="240.03" y2="92.71" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="C29" gate="G$1" pin="-"/>
-<pinref part="GND54" gate="1" pin="GND"/>
-<wire x1="232.41" y1="91.44" x2="232.41" y2="92.71" width="0.1524" layer="91"/>
-</segment>
-<segment>
 <pinref part="CS39" gate="G$1" pin="2"/>
 <pinref part="GND55" gate="1" pin="GND"/>
-<wire x1="224.79" y1="91.44" x2="224.79" y2="93.98" width="0.1524" layer="91"/>
+<wire x1="229.87" y1="91.44" x2="229.87" y2="93.98" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="R15" gate="G$1" pin="1"/>
@@ -16412,15 +16370,11 @@ Pero 2016</text>
 </net>
 <net name="N$23" class="0">
 <segment>
-<pinref part="C20" gate="G$1" pin="+"/>
-<wire x1="240.03" y1="203.2" x2="232.41" y2="203.2" width="0.1524" layer="91"/>
-<wire x1="232.41" y1="203.2" x2="224.79" y2="203.2" width="0.1524" layer="91"/>
+<pinref part="C20" gate="G$1" pin="1"/>
+<wire x1="240.03" y1="203.2" x2="229.87" y2="203.2" width="0.1524" layer="91"/>
 <wire x1="240.03" y1="199.39" x2="240.03" y2="203.2" width="0.1524" layer="91"/>
-<pinref part="C21" gate="G$1" pin="+"/>
-<wire x1="232.41" y1="199.39" x2="232.41" y2="203.2" width="0.1524" layer="91"/>
-<junction x="232.41" y="203.2"/>
 <pinref part="CS9" gate="G$1" pin="1"/>
-<wire x1="224.79" y1="200.66" x2="224.79" y2="203.2" width="0.1524" layer="91"/>
+<wire x1="229.87" y1="200.66" x2="229.87" y2="203.2" width="0.1524" layer="91"/>
 <pinref part="U4" gate="A" pin="RECT"/>
 <wire x1="257.81" y1="203.2" x2="240.03" y2="203.2" width="0.1524" layer="91"/>
 <junction x="240.03" y="203.2"/>
@@ -16574,15 +16528,11 @@ Pero 2016</text>
 </net>
 <net name="N$32" class="0">
 <segment>
-<pinref part="C22" gate="G$1" pin="+"/>
-<wire x1="146.05" y1="203.2" x2="153.67" y2="203.2" width="0.1524" layer="91"/>
-<wire x1="153.67" y1="203.2" x2="161.29" y2="203.2" width="0.1524" layer="91"/>
+<pinref part="C22" gate="G$1" pin="1"/>
+<wire x1="146.05" y1="203.2" x2="156.21" y2="203.2" width="0.1524" layer="91"/>
 <wire x1="146.05" y1="199.39" x2="146.05" y2="203.2" width="0.1524" layer="91"/>
-<pinref part="C23" gate="G$1" pin="+"/>
-<wire x1="153.67" y1="199.39" x2="153.67" y2="203.2" width="0.1524" layer="91"/>
-<junction x="153.67" y="203.2"/>
 <pinref part="CS19" gate="G$1" pin="1"/>
-<wire x1="161.29" y1="200.66" x2="161.29" y2="203.2" width="0.1524" layer="91"/>
+<wire x1="156.21" y1="200.66" x2="156.21" y2="203.2" width="0.1524" layer="91"/>
 <pinref part="U7" gate="A" pin="RECT"/>
 <wire x1="128.27" y1="203.2" x2="146.05" y2="203.2" width="0.1524" layer="91"/>
 <junction x="146.05" y="203.2"/>
@@ -16720,15 +16670,11 @@ Pero 2016</text>
 </net>
 <net name="N$45" class="0">
 <segment>
-<pinref part="C25" gate="G$1" pin="+"/>
-<wire x1="146.05" y1="104.14" x2="153.67" y2="104.14" width="0.1524" layer="91"/>
-<wire x1="153.67" y1="104.14" x2="161.29" y2="104.14" width="0.1524" layer="91"/>
+<pinref part="C25" gate="G$1" pin="1"/>
+<wire x1="146.05" y1="104.14" x2="156.21" y2="104.14" width="0.1524" layer="91"/>
 <wire x1="146.05" y1="100.33" x2="146.05" y2="104.14" width="0.1524" layer="91"/>
-<pinref part="C26" gate="G$1" pin="+"/>
-<wire x1="153.67" y1="100.33" x2="153.67" y2="104.14" width="0.1524" layer="91"/>
-<junction x="153.67" y="104.14"/>
 <pinref part="CS29" gate="G$1" pin="1"/>
-<wire x1="161.29" y1="101.6" x2="161.29" y2="104.14" width="0.1524" layer="91"/>
+<wire x1="156.21" y1="101.6" x2="156.21" y2="104.14" width="0.1524" layer="91"/>
 <pinref part="U8" gate="A" pin="RECT"/>
 <wire x1="128.27" y1="104.14" x2="146.05" y2="104.14" width="0.1524" layer="91"/>
 <junction x="146.05" y="104.14"/>
@@ -16866,15 +16812,11 @@ Pero 2016</text>
 </net>
 <net name="N$58" class="0">
 <segment>
-<pinref part="C28" gate="G$1" pin="+"/>
-<wire x1="240.03" y1="104.14" x2="232.41" y2="104.14" width="0.1524" layer="91"/>
-<wire x1="232.41" y1="104.14" x2="224.79" y2="104.14" width="0.1524" layer="91"/>
+<pinref part="C28" gate="G$1" pin="1"/>
+<wire x1="240.03" y1="104.14" x2="229.87" y2="104.14" width="0.1524" layer="91"/>
 <wire x1="240.03" y1="100.33" x2="240.03" y2="104.14" width="0.1524" layer="91"/>
-<pinref part="C29" gate="G$1" pin="+"/>
-<wire x1="232.41" y1="100.33" x2="232.41" y2="104.14" width="0.1524" layer="91"/>
-<junction x="232.41" y="104.14"/>
 <pinref part="CS39" gate="G$1" pin="1"/>
-<wire x1="224.79" y1="101.6" x2="224.79" y2="104.14" width="0.1524" layer="91"/>
+<wire x1="229.87" y1="101.6" x2="229.87" y2="104.14" width="0.1524" layer="91"/>
 <pinref part="U9" gate="A" pin="RECT"/>
 <wire x1="257.81" y1="104.14" x2="240.03" y2="104.14" width="0.1524" layer="91"/>
 <junction x="240.03" y="104.14"/>
