@@ -644,12 +644,6 @@
 <text x="-2.54" y="-2.54" size="1.778" layer="96">&gt;VALUE</text>
 <pin name="GND" x="0" y="2.54" visible="off" length="short" direction="sup" rot="R270"/>
 </symbol>
-<symbol name="5V">
-<wire x1="0.762" y1="1.27" x2="0" y2="2.54" width="0.254" layer="94"/>
-<wire x1="0" y1="2.54" x2="-0.762" y2="1.27" width="0.254" layer="94"/>
-<text x="-1.016" y="3.556" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="5V" x="0" y="0" visible="off" length="short" direction="sup" rot="R90"/>
-</symbol>
 <symbol name="3.3V">
 <wire x1="0.762" y1="1.27" x2="0" y2="2.54" width="0.254" layer="94"/>
 <wire x1="0" y1="2.54" x2="-0.762" y2="1.27" width="0.254" layer="94"/>
@@ -694,18 +688,6 @@
 <description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
 <gates>
 <gate name="1" symbol="GND" x="0" y="0"/>
-</gates>
-<devices>
-<device name="">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="5V">
-<gates>
-<gate name="G$1" symbol="5V" x="0" y="0"/>
 </gates>
 <devices>
 <device name="">
@@ -3070,81 +3052,6 @@ Standard 3-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 </connects>
 <technologies>
 <technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
-<library name="SparkFun-PowerIC">
-<description>&lt;h3&gt;SparkFun Electronics' preferred foot prints&lt;/h3&gt;
-In this library you'll find drivers, regulators, and amplifiers.&lt;br&gt;&lt;br&gt;
-We've spent an enormous amount of time creating and checking these footprints and parts, but it is the end user's responsibility to ensure correctness and suitablity for a given componet or application. If you enjoy using this library, please buy one of our products at www.sparkfun.com.
-&lt;br&gt;&lt;br&gt;
-&lt;b&gt;Licensing:&lt;/b&gt; Creative Commons ShareAlike 4.0 International - https://creativecommons.org/licenses/by-sa/4.0/ 
-&lt;br&gt;&lt;br&gt;
-You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.</description>
-<packages>
-<package name="SOT23-5">
-<description>&lt;b&gt;Small Outline Transistor&lt;/b&gt;</description>
-<wire x1="1.27" y1="0.4294" x2="1.27" y2="-0.4294" width="0.2032" layer="21"/>
-<wire x1="1.4" y1="-0.8" x2="-1.4" y2="-0.8" width="0.1524" layer="51"/>
-<wire x1="-1.27" y1="-0.4294" x2="-1.27" y2="0.4294" width="0.2032" layer="21"/>
-<wire x1="-1.4" y1="0.8" x2="1.4" y2="0.8" width="0.1524" layer="51"/>
-<wire x1="-0.2684" y1="0.7088" x2="0.2684" y2="0.7088" width="0.2032" layer="21"/>
-<wire x1="1.4" y1="0.8" x2="1.4" y2="-0.8" width="0.1524" layer="51"/>
-<wire x1="-1.4" y1="0.8" x2="-1.4" y2="-0.8" width="0.1524" layer="51"/>
-<rectangle x1="-1.2" y1="-1.5" x2="-0.7" y2="-0.85" layer="51"/>
-<rectangle x1="-0.25" y1="-1.5" x2="0.25" y2="-0.85" layer="51"/>
-<rectangle x1="0.7" y1="-1.5" x2="1.2" y2="-0.85" layer="51"/>
-<rectangle x1="0.7" y1="0.85" x2="1.2" y2="1.5" layer="51"/>
-<rectangle x1="-1.2" y1="0.85" x2="-0.7" y2="1.5" layer="51"/>
-<smd name="1" x="-0.95" y="-1.3001" dx="0.55" dy="1.2" layer="1"/>
-<smd name="2" x="0" y="-1.3001" dx="0.55" dy="1.2" layer="1"/>
-<smd name="3" x="0.95" y="-1.3001" dx="0.55" dy="1.2" layer="1"/>
-<smd name="4" x="0.95" y="1.3001" dx="0.55" dy="1.2" layer="1"/>
-<smd name="5" x="-0.95" y="1.3001" dx="0.55" dy="1.2" layer="1"/>
-<text x="-0.889" y="2.159" size="0.4064" layer="25">&gt;NAME</text>
-<text x="-0.9525" y="-0.1905" size="0.4064" layer="27">&gt;VALUE</text>
-<circle x="-1.6002" y="-1.016" radius="0.127" width="0" layer="21"/>
-</package>
-</packages>
-<symbols>
-<symbol name="MCP73831">
-<wire x1="-7.62" y1="5.08" x2="7.62" y2="5.08" width="0.254" layer="94"/>
-<wire x1="7.62" y1="5.08" x2="7.62" y2="-5.08" width="0.254" layer="94"/>
-<wire x1="7.62" y1="-5.08" x2="-7.62" y2="-5.08" width="0.254" layer="94"/>
-<wire x1="-7.62" y1="-5.08" x2="-7.62" y2="5.08" width="0.254" layer="94"/>
-<text x="-7.62" y="5.588" size="1.778" layer="95">&gt;Name</text>
-<text x="-7.62" y="-7.62" size="1.778" layer="96">&gt;Value</text>
-<pin name="VIN" x="-10.16" y="2.54" length="short" direction="pwr"/>
-<pin name="STAT" x="-10.16" y="-2.54" length="short" direction="out"/>
-<pin name="VBAT" x="10.16" y="2.54" length="short" direction="pwr" rot="R180"/>
-<pin name="PROG" x="10.16" y="0" length="short" direction="in" rot="R180"/>
-<pin name="VSS" x="10.16" y="-2.54" length="short" direction="pwr" rot="R180"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="MCP73831" prefix="U">
-<description>&lt;b&gt;Miniature single cell, fully integrated Li-Ion, Li-polymer charge management controller&lt;/b&gt;&lt;br&gt;
-http://ww1.microchip.com/downloads/en/DeviceDoc/20001984g.pdf&lt;br&gt;
-IC-09995</description>
-<gates>
-<gate name="G$1" symbol="MCP73831" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="SOT23-5">
-<connects>
-<connect gate="G$1" pin="PROG" pad="5"/>
-<connect gate="G$1" pin="STAT" pad="1"/>
-<connect gate="G$1" pin="VBAT" pad="3"/>
-<connect gate="G$1" pin="VIN" pad="4"/>
-<connect gate="G$1" pin="VSS" pad="2"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="PROD_ID" value="IC-09995"/>
-</technology>
 </technologies>
 </device>
 </devices>
@@ -9664,12 +9571,6 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <smd name="19" x="1.725" y="1.75" dx="0.28" dy="0.85" layer="1" rot="R270" cream="no"/>
 <smd name="20" x="0.75" y="2.225" dx="0.28" dy="0.85" layer="1" cream="no"/>
 <smd name="21" x="0" y="0" dx="2.05" dy="3.05" layer="1" cream="no"/>
-<pad name="V" x="-0.4064" y="-0.7874" drill="0.254" diameter="0.508"/>
-<pad name="V_1" x="-0.4064" y="0" drill="0.254" diameter="0.508"/>
-<pad name="V_2" x="-0.4064" y="0.7874" drill="0.254" diameter="0.508"/>
-<pad name="V_3" x="0.4064" y="-0.7874" drill="0.254" diameter="0.508"/>
-<pad name="V_4" x="0.4064" y="0" drill="0.254" diameter="0.508"/>
-<pad name="V_5" x="0.4064" y="0.7874" drill="0.254" diameter="0.508"/>
 <wire x1="-1.2192" y1="2.3368" x2="-1.8288" y2="2.3368" width="0.1524" layer="51"/>
 <wire x1="-1.8288" y1="-2.3368" x2="-1.2192" y2="-2.3368" width="0.1524" layer="51"/>
 <wire x1="1.2192" y1="-2.3368" x2="1.8288" y2="-2.3368" width="0.1524" layer="51"/>
@@ -10344,7 +10245,7 @@ White LED Driver</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="CAT4139" uservalue="yes">
+<deviceset name="CAT4139" prefix="U" uservalue="yes">
 <description>The CAT4139 is a DC/DC step−up converter that delivers an
 accurate constant current ideal for driving LEDs. 
 &lt;p&gt;
@@ -14606,8 +14507,152 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="supply1">
+<description>&lt;b&gt;Supply Symbols&lt;/b&gt;&lt;p&gt;
+ GND, VCC, 0V, +5V, -5V, etc.&lt;p&gt;
+ Please keep in mind, that these devices are necessary for the
+ automatic wiring of the supply signals.&lt;p&gt;
+ The pin name defined in the symbol is identical to the net which is to be wired automatically.&lt;p&gt;
+ In this library the device names are the same as the pin names of the symbols, therefore the correct signal names appear next to the supply symbols in the schematic.&lt;p&gt;
+ &lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
+<packages>
+</packages>
+<symbols>
+<symbol name="+5V">
+<wire x1="1.27" y1="-1.905" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="-1.27" y2="-1.905" width="0.254" layer="94"/>
+<text x="-2.54" y="-5.08" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
+<pin name="+5V" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="+5V" prefix="P+">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name="1" symbol="+5V" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
+<library name="SparkFun-PowerIC">
+<description>&lt;h3&gt;SparkFun Electronics' preferred foot prints&lt;/h3&gt;
+In this library you'll find drivers, regulators, and amplifiers.&lt;br&gt;&lt;br&gt;
+We've spent an enormous amount of time creating and checking these footprints and parts, but it is the end user's responsibility to ensure correctness and suitablity for a given componet or application. If you enjoy using this library, please buy one of our products at www.sparkfun.com.
+&lt;br&gt;&lt;br&gt;
+&lt;b&gt;Licensing:&lt;/b&gt; Creative Commons ShareAlike 4.0 International - https://creativecommons.org/licenses/by-sa/4.0/ 
+&lt;br&gt;&lt;br&gt;
+You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.</description>
+<packages>
+<package name="SOT23-5">
+<description>&lt;b&gt;Small Outline Transistor&lt;/b&gt;</description>
+<wire x1="1.27" y1="0.4294" x2="1.27" y2="-0.4294" width="0.2032" layer="21"/>
+<wire x1="1.4" y1="-0.8" x2="-1.4" y2="-0.8" width="0.1524" layer="51"/>
+<wire x1="-1.27" y1="-0.4294" x2="-1.27" y2="0.4294" width="0.2032" layer="21"/>
+<wire x1="-1.4" y1="0.8" x2="1.4" y2="0.8" width="0.1524" layer="51"/>
+<wire x1="-0.2684" y1="0.7088" x2="0.2684" y2="0.7088" width="0.2032" layer="21"/>
+<wire x1="1.4" y1="0.8" x2="1.4" y2="-0.8" width="0.1524" layer="51"/>
+<wire x1="-1.4" y1="0.8" x2="-1.4" y2="-0.8" width="0.1524" layer="51"/>
+<rectangle x1="-1.2" y1="-1.5" x2="-0.7" y2="-0.85" layer="51"/>
+<rectangle x1="-0.25" y1="-1.5" x2="0.25" y2="-0.85" layer="51"/>
+<rectangle x1="0.7" y1="-1.5" x2="1.2" y2="-0.85" layer="51"/>
+<rectangle x1="0.7" y1="0.85" x2="1.2" y2="1.5" layer="51"/>
+<rectangle x1="-1.2" y1="0.85" x2="-0.7" y2="1.5" layer="51"/>
+<smd name="1" x="-0.95" y="-1.3001" dx="0.55" dy="1.2" layer="1"/>
+<smd name="2" x="0" y="-1.3001" dx="0.55" dy="1.2" layer="1"/>
+<smd name="3" x="0.95" y="-1.3001" dx="0.55" dy="1.2" layer="1"/>
+<smd name="4" x="0.95" y="1.3001" dx="0.55" dy="1.2" layer="1"/>
+<smd name="5" x="-0.95" y="1.3001" dx="0.55" dy="1.2" layer="1"/>
+<text x="-0.889" y="2.159" size="0.4064" layer="25">&gt;NAME</text>
+<text x="-0.9525" y="-0.1905" size="0.4064" layer="27">&gt;VALUE</text>
+<circle x="-1.6002" y="-1.016" radius="0.127" width="0" layer="21"/>
+</package>
+</packages>
+<symbols>
+<symbol name="MCP73831">
+<wire x1="-7.62" y1="5.08" x2="7.62" y2="5.08" width="0.254" layer="94"/>
+<wire x1="7.62" y1="5.08" x2="7.62" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-5.08" x2="-7.62" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-5.08" x2="-7.62" y2="5.08" width="0.254" layer="94"/>
+<text x="-7.62" y="5.588" size="1.778" layer="95">&gt;Name</text>
+<text x="-7.62" y="-7.62" size="1.778" layer="96">&gt;Value</text>
+<pin name="VIN" x="-10.16" y="2.54" length="short" direction="pwr"/>
+<pin name="STAT" x="-10.16" y="-2.54" length="short" direction="out"/>
+<pin name="VBAT" x="10.16" y="2.54" length="short" direction="pwr" rot="R180"/>
+<pin name="PROG" x="10.16" y="0" length="short" direction="in" rot="R180"/>
+<pin name="VSS" x="10.16" y="-2.54" length="short" direction="pwr" rot="R180"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="MCP73831" prefix="U">
+<description>&lt;b&gt;Miniature single cell, fully integrated Li-Ion, Li-polymer charge management controller&lt;/b&gt;&lt;br&gt;
+http://ww1.microchip.com/downloads/en/DeviceDoc/20001984g.pdf&lt;br&gt;
+IC-09995</description>
+<gates>
+<gate name="G$1" symbol="MCP73831" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOT23-5">
+<connects>
+<connect gate="G$1" pin="PROG" pad="5"/>
+<connect gate="G$1" pin="STAT" pad="1"/>
+<connect gate="G$1" pin="VBAT" pad="3"/>
+<connect gate="G$1" pin="VIN" pad="4"/>
+<connect gate="G$1" pin="VSS" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="IC-09995"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
+<library name="SparkFun-Aesthetics">
+<description>&lt;h3&gt;SparkFun Electronics' preferred foot prints&lt;/h3&gt;
+In this library you'll find non-functional items- supply symbols, logos, notations, frame blocks, etc.&lt;br&gt;&lt;br&gt;
+We've spent an enormous amount of time creating and checking these footprints and parts, but it is the end user's responsibility to ensure correctness and suitablity for a given componet or application. If you enjoy using this library, please buy one of our products at www.sparkfun.com.
+&lt;br&gt;&lt;br&gt;
+&lt;b&gt;Licensing:&lt;/b&gt; Creative Commons ShareAlike 4.0 International - https://creativecommons.org/licenses/by-sa/4.0/ 
+&lt;br&gt;&lt;br&gt;
+You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.</description>
+<packages>
+</packages>
+<symbols>
+<symbol name="3.3V">
+<wire x1="0.762" y1="1.27" x2="0" y2="2.54" width="0.254" layer="94"/>
+<wire x1="0" y1="2.54" x2="-0.762" y2="1.27" width="0.254" layer="94"/>
+<text x="-1.016" y="3.556" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="3.3V" x="0" y="0" visible="off" length="short" direction="sup" rot="R90"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="3.3V" prefix="SUPPLY">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="3.3V" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
+<attribute name="AUTHOR" value="Pero Krivic"/>
 </attributes>
 <variantdefs>
 </variantdefs>
@@ -14618,8 +14663,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <parts>
 <part name="R1" library="rcl" deviceset="R-EU_" device="R0603" value="10k"/>
 <part name="U2" library="pero_library" deviceset="LM3671" device="3.3V" value="LM3671"/>
-<part name="U$3" library="SparkFun" deviceset="5V" device=""/>
-<part name="3V3" library="SparkFun" deviceset="3.3V" device=""/>
+<part name="3V3" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
 <part name="GND8" library="SparkFun" deviceset="GND" device=""/>
 <part name="C5" library="rcl" deviceset="C-EU" device="C0603K" value="10μF"/>
 <part name="GND9" library="SparkFun" deviceset="GND" device=""/>
@@ -14649,25 +14693,22 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <part name="R8" library="rcl" deviceset="R-EU_" device="R0603" value="10k"/>
 <part name="FRAME1" library="frames" deviceset="A3L-LOC" device=""/>
 <part name="JP2" library="SparkFun-Connectors" deviceset="M03" device="PTH" value="NeoPixel RGB Ring"/>
-<part name="U$5" library="SparkFun" deviceset="5V" device=""/>
 <part name="GND24" library="SparkFun" deviceset="GND" device=""/>
 <part name="R5" library="rcl" deviceset="R-EU_" device="R0603" value="300"/>
 <part name="C14" library="SparkFun" deviceset="CAP_POL" device="1206" value="10μF"/>
 <part name="GND21" library="SparkFun" deviceset="GND" device=""/>
-<part name="U5" library="SparkFun-PowerIC" deviceset="MCP73831" device=""/>
 <part name="D2" library="diode" deviceset="SMF5.0AT1" device=""/>
 <part name="GND25" library="SparkFun" deviceset="GND" device=""/>
 <part name="GND26" library="SparkFun" deviceset="GND" device=""/>
 <part name="GND27" library="SparkFun" deviceset="GND" device=""/>
 <part name="GND28" library="SparkFun" deviceset="GND" device=""/>
-<part name="3V2" library="SparkFun" deviceset="3.3V" device=""/>
+<part name="3V2" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
 <part name="3V4" library="SparkFun" deviceset="3.3V" device=""/>
-<part name="3V5" library="SparkFun" deviceset="3.3V" device=""/>
-<part name="3V6" library="SparkFun" deviceset="3.3V" device=""/>
+<part name="3V5" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
+<part name="3V6" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
 <part name="3V8" library="SparkFun" deviceset="3.3V" device=""/>
 <part name="3V9" library="SparkFun" deviceset="3.3V" device=""/>
 <part name="3V10" library="SparkFun" deviceset="3.3V" device=""/>
-<part name="U$2" library="SparkFun" deviceset="5V" device=""/>
 <part name="C15" library="SparkFun" deviceset="CAP_POL" device="1206" value="10μF"/>
 <part name="R6" library="rcl" deviceset="R-EU_" device="R0603" value="10k"/>
 <part name="J2" library="pero_library" deviceset="LIPO-BATTERY-CONNECTOR" device=""/>
@@ -14676,7 +14717,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <part name="GND30" library="SparkFun" deviceset="GND" device=""/>
 <part name="D3" library="diode" deviceset="SMF5.0AT1" device=""/>
 <part name="U4" library="pero_library" deviceset="BQ51013B_RHL_20" device=""/>
-<part name="J3" library="SparkFun-Connectors" deviceset="M02" device="PTH2"/>
+<part name="J3" library="SparkFun-Connectors" deviceset="M02" device="PTH2" value="Qi coil"/>
 <part name="CS" library="rcl" deviceset="C-EU" device="C0603K" value="18pF"/>
 <part name="CP1" library="rcl" deviceset="C-EU" device="C0603K" value="18pF"/>
 <part name="CS1" library="rcl" deviceset="C-EU" device="C0603K" value="10nF"/>
@@ -14702,7 +14743,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <part name="GND34" library="SparkFun" deviceset="GND" device=""/>
 <part name="GND35" library="SparkFun" deviceset="GND" device=""/>
 <part name="U7" library="pero_library" deviceset="BQ51013B_RHL_20" device=""/>
-<part name="J4" library="SparkFun-Connectors" deviceset="M02" device="PTH2"/>
+<part name="J4" library="SparkFun-Connectors" deviceset="M02" device="PTH2" value="Qi coil"/>
 <part name="CS10" library="rcl" deviceset="C-EU" device="C0603K" value="18pF"/>
 <part name="CP3" library="rcl" deviceset="C-EU" device="C0603K" value="18pF"/>
 <part name="CS11" library="rcl" deviceset="C-EU" device="C0603K" value="10nF"/>
@@ -14728,7 +14769,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <part name="GND41" library="SparkFun" deviceset="GND" device=""/>
 <part name="GND42" library="SparkFun" deviceset="GND" device=""/>
 <part name="U8" library="pero_library" deviceset="BQ51013B_RHL_20" device=""/>
-<part name="J5" library="SparkFun-Connectors" deviceset="M02" device="PTH2"/>
+<part name="J5" library="SparkFun-Connectors" deviceset="M02" device="PTH2" value="Qi coil"/>
 <part name="CS20" library="rcl" deviceset="C-EU" device="C0603K" value="18pF"/>
 <part name="CP5" library="rcl" deviceset="C-EU" device="C0603K" value="18pF"/>
 <part name="CS21" library="rcl" deviceset="C-EU" device="C0603K" value="10nF"/>
@@ -14754,7 +14795,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <part name="GND49" library="SparkFun" deviceset="GND" device=""/>
 <part name="GND50" library="SparkFun" deviceset="GND" device=""/>
 <part name="U9" library="pero_library" deviceset="BQ51013B_RHL_20" device=""/>
-<part name="J6" library="SparkFun-Connectors" deviceset="M02" device="PTH2"/>
+<part name="J6" library="SparkFun-Connectors" deviceset="M02" device="PTH2" value="Qi coil"/>
 <part name="CS30" library="rcl" deviceset="C-EU" device="C0603K" value="18pF"/>
 <part name="CP7" library="rcl" deviceset="C-EU" device="C0603K" value="18pF"/>
 <part name="CS31" library="rcl" deviceset="C-EU" device="C0603K" value="10nF"/>
@@ -14781,28 +14822,32 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <part name="GND58" library="SparkFun" deviceset="GND" device=""/>
 <part name="U1" library="attiny1634" deviceset="ATTINY1634" device="MLF20"/>
 <part name="GND2" library="SparkFun" deviceset="GND" device=""/>
-<part name="J7" library="SparkFun-Connectors" deviceset="M02" device="PTH"/>
+<part name="J7" library="SparkFun-Connectors" deviceset="M02" device="PTH" value="UART"/>
 <part name="D4" library="diode" deviceset="SMF5.0AT1" device=""/>
 <part name="D5" library="diode" deviceset="SMF5.0AT1" device=""/>
 <part name="D6" library="diode" deviceset="SMF5.0AT1" device=""/>
 <part name="J8" library="SparkFun-Connectors" deviceset="M02" device="PTH" value="BL-HP20AUW2C"/>
-<part name="Q1" library="SparkFun-DiscreteSemi" deviceset="TRANSISTOR_NPN" device="SOT23-3"/>
-<part name="Q2" library="SparkFun-DiscreteSemi" deviceset="TRANSISTOR_NPN" device="SOT23-3"/>
-<part name="R18" library="rcl" deviceset="R-EU_" device="R0603"/>
+<part name="Q1" library="SparkFun-DiscreteSemi" deviceset="TRANSISTOR_NPN" device="SOT23-3" value="NPN"/>
+<part name="Q2" library="SparkFun-DiscreteSemi" deviceset="TRANSISTOR_NPN" device="SOT23-3" value="NPN"/>
+<part name="R18" library="rcl" deviceset="R-EU_" device="R0603" value="1.8"/>
 <part name="GND3" library="SparkFun" deviceset="GND" device=""/>
 <part name="SJ1" library="SparkFun-Retired" deviceset="SOLDERJUMPER_2WAY" device="PASTE2&amp;3"/>
 <part name="U6" library="pero_library" deviceset="CAT4139" device="" value="CAT4139"/>
 <part name="C1" library="rcl" deviceset="C-EU" device="C0603K" value="10μF"/>
 <part name="GND6" library="SparkFun" deviceset="GND" device=""/>
 <part name="GND7" library="SparkFun" deviceset="GND" device=""/>
-<part name="U$7" library="SparkFun" deviceset="5V" device=""/>
 <part name="R19" library="resistor" deviceset="R-EU_" device="R0603" value="1"/>
 <part name="GND29" library="SparkFun" deviceset="GND" device=""/>
 <part name="R20" library="resistor" deviceset="R-EU_" device="R0603" value="1k"/>
 <part name="SJ2" library="SparkFun-Retired" deviceset="SOLDERJUMPER_2WAY" device="PASTE2&amp;3"/>
-<part name="U$4" library="SparkFun" deviceset="5V" device=""/>
 <part name="FRAME3" library="frames" deviceset="A4L-LOC" device=""/>
 <part name="L2" library="SparkFun-Passives" deviceset="INDUCTOR" device="SDR0403-560KL" value="22uH"/>
+<part name="P+1" library="supply1" deviceset="+5V" device=""/>
+<part name="P+2" library="supply1" deviceset="+5V" device=""/>
+<part name="P+3" library="supply1" deviceset="+5V" device=""/>
+<part name="P+4" library="supply1" deviceset="+5V" device=""/>
+<part name="P+5" library="supply1" deviceset="+5V" device=""/>
+<part name="U5" library="SparkFun-PowerIC" deviceset="MCP73831" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -14821,7 +14866,6 @@ Pero 2016</text>
 <attribute name="VALUE" x="121.92" y="76.708" size="1.778" layer="96"/>
 </instance>
 <instance part="U2" gate="G$1" x="115.57" y="148.59"/>
-<instance part="U$3" gate="G$1" x="92.71" y="156.21"/>
 <instance part="3V3" gate="G$1" x="146.05" y="156.21"/>
 <instance part="GND8" gate="1" x="102.87" y="135.89"/>
 <instance part="C5" gate="G$1" x="146.05" y="146.05"/>
@@ -14865,10 +14909,6 @@ Pero 2016</text>
 <attribute name="NAME" x="132.588" y="50.5714" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="133.096" y="48.514" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="U5" gate="G$1" x="46.99" y="151.13" smashed="yes">
-<attribute name="NAME" x="39.37" y="156.718" size="1.778" layer="95"/>
-<attribute name="VALUE" x="39.37" y="143.51" size="1.778" layer="96"/>
-</instance>
 <instance part="GND25" gate="1" x="72.39" y="135.89"/>
 <instance part="GND26" gate="1" x="57.15" y="135.89"/>
 <instance part="GND27" gate="1" x="64.77" y="135.89"/>
@@ -14880,7 +14920,6 @@ Pero 2016</text>
 <instance part="3V8" gate="G$1" x="26.67" y="120.65"/>
 <instance part="3V9" gate="G$1" x="34.29" y="120.65"/>
 <instance part="3V10" gate="G$1" x="41.91" y="120.65"/>
-<instance part="U$2" gate="G$1" x="101.6" y="116.84"/>
 <instance part="C15" gate="G$1" x="31.75" y="146.05"/>
 <instance part="R6" gate="G$1" x="64.77" y="146.05" smashed="yes" rot="R90">
 <attribute name="NAME" x="63.5254" y="141.478" size="1.778" layer="95" rot="R90"/>
@@ -14894,7 +14933,6 @@ Pero 2016</text>
 <attribute name="VALUE" x="202.946" y="69.088" size="1.778" layer="96" rot="R180"/>
 <attribute name="NAME" x="185.42" y="55.118" size="1.778" layer="95" rot="R180"/>
 </instance>
-<instance part="U$5" gate="G$1" x="162.56" y="63.5"/>
 <instance part="GND24" gate="1" x="175.26" y="43.18"/>
 <instance part="R5" gate="G$1" x="170.18" y="73.66" rot="R180"/>
 <instance part="C14" gate="G$1" x="162.56" y="53.34"/>
@@ -14923,16 +14961,20 @@ Pero 2016</text>
 <instance part="C1" gate="G$1" x="162.56" y="127"/>
 <instance part="GND6" gate="1" x="162.56" y="109.22"/>
 <instance part="GND7" gate="1" x="185.42" y="109.22"/>
-<instance part="U$7" gate="G$1" x="162.56" y="142.24"/>
 <instance part="R19" gate="G$1" x="218.44" y="116.84" rot="R270"/>
 <instance part="GND29" gate="1" x="218.44" y="109.22"/>
 <instance part="R20" gate="G$1" x="208.28" y="121.92"/>
 <instance part="SJ2" gate="G$1" x="220.98" y="139.7" rot="R90"/>
-<instance part="U$4" gate="G$1" x="226.06" y="142.24"/>
 <instance part="FRAME3" gate="G$1" x="0" y="0"/>
 <instance part="L2" gate="G$1" x="130.81" y="153.67" smashed="yes" rot="R90">
 <attribute name="NAME" x="128.27" y="158.242" size="1.778" layer="95" rot="R180"/>
 </instance>
+<instance part="P+1" gate="1" x="92.71" y="158.75"/>
+<instance part="P+2" gate="1" x="226.06" y="144.78"/>
+<instance part="P+3" gate="1" x="162.56" y="144.526"/>
+<instance part="P+4" gate="1" x="162.56" y="65.786"/>
+<instance part="P+5" gate="1" x="101.6" y="121.92"/>
+<instance part="U5" gate="G$1" x="46.99" y="151.13"/>
 </instances>
 <busses>
 </busses>
@@ -15006,9 +15048,9 @@ Pero 2016</text>
 <pinref part="J2" gate="G$1" pin="-"/>
 </segment>
 <segment>
-<pinref part="U5" gate="G$1" pin="VSS"/>
 <wire x1="57.15" y1="148.59" x2="57.15" y2="138.43" width="0.1524" layer="91"/>
 <pinref part="GND26" gate="1" pin="GND"/>
+<pinref part="U5" gate="G$1" pin="VSS"/>
 </segment>
 <segment>
 <wire x1="64.77" y1="140.97" x2="64.77" y2="138.43" width="0.1524" layer="91"/>
@@ -15075,64 +15117,6 @@ Pero 2016</text>
 <segment>
 <pinref part="R19" gate="G$1" pin="2"/>
 <pinref part="GND29" gate="1" pin="GND"/>
-</segment>
-</net>
-<net name="5V" class="0">
-<segment>
-<wire x1="92.71" y1="153.67" x2="102.87" y2="153.67" width="0.1524" layer="91"/>
-<wire x1="102.87" y1="153.67" x2="105.41" y2="153.67" width="0.1524" layer="91"/>
-<wire x1="92.71" y1="153.67" x2="92.71" y2="156.21" width="0.1524" layer="91"/>
-<junction x="92.71" y="153.67"/>
-<pinref part="U2" gate="G$1" pin="IN"/>
-<pinref part="U$3" gate="G$1" pin="5V"/>
-<pinref part="C8" gate="G$1" pin="1"/>
-<wire x1="92.71" y1="148.59" x2="92.71" y2="153.67" width="0.1524" layer="91"/>
-<pinref part="U2" gate="G$1" pin="EN"/>
-<wire x1="102.87" y1="148.59" x2="105.41" y2="148.59" width="0.1524" layer="91"/>
-<wire x1="102.87" y1="148.59" x2="102.87" y2="153.67" width="0.1524" layer="91"/>
-<junction x="102.87" y="153.67"/>
-<wire x1="74.93" y1="153.67" x2="92.71" y2="153.67" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="J1" gate="G$1" pin="2"/>
-<pinref part="U$2" gate="G$1" pin="5V"/>
-<wire x1="96.52" y1="114.3" x2="101.6" y2="114.3" width="0.1524" layer="91"/>
-<wire x1="101.6" y1="114.3" x2="101.6" y2="116.84" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="U$5" gate="G$1" pin="5V"/>
-<pinref part="JP2" gate="J$1" pin="2"/>
-<wire x1="162.56" y1="60.96" x2="162.56" y2="63.5" width="0.1524" layer="91"/>
-<wire x1="177.8" y1="60.96" x2="162.56" y2="60.96" width="0.1524" layer="91"/>
-<pinref part="C14" gate="G$1" pin="+"/>
-<wire x1="162.56" y1="60.96" x2="162.56" y2="55.88" width="0.1524" layer="91"/>
-<junction x="162.56" y="60.96"/>
-</segment>
-<segment>
-<pinref part="C1" gate="G$1" pin="1"/>
-<pinref part="U$7" gate="G$1" pin="5V"/>
-<wire x1="162.56" y1="129.54" x2="162.56" y2="139.7" width="0.1524" layer="91"/>
-<pinref part="L1" gate="G$1" pin="1"/>
-<wire x1="162.56" y1="139.7" x2="162.56" y2="142.24" width="0.1524" layer="91"/>
-<wire x1="162.56" y1="139.7" x2="170.18" y2="139.7" width="0.1524" layer="91"/>
-<junction x="162.56" y="139.7"/>
-<pinref part="U6" gate="G$1" pin="VIN"/>
-<wire x1="170.18" y1="139.7" x2="177.8" y2="139.7" width="0.1524" layer="91"/>
-<wire x1="170.18" y1="132.08" x2="170.18" y2="139.7" width="0.1524" layer="91"/>
-<junction x="170.18" y="139.7"/>
-</segment>
-<segment>
-<pinref part="SJ2" gate="G$1" pin="3"/>
-<wire x1="226.06" y1="139.7" x2="226.06" y2="142.24" width="0.1524" layer="91"/>
-<pinref part="U$4" gate="G$1" pin="5V"/>
-</segment>
-<segment>
-<wire x1="74.93" y1="146.05" x2="72.39" y2="146.05" width="0.1524" layer="91"/>
-<wire x1="72.39" y1="146.05" x2="72.39" y2="153.67" width="0.1524" layer="91"/>
-<pinref part="J2" gate="G$1" pin="+"/>
-<wire x1="72.39" y1="153.67" x2="74.93" y2="153.67" width="0.1524" layer="91"/>
-<wire x1="56.896" y1="153.67" x2="72.39" y2="153.67" width="0.1524" layer="91"/>
-<junction x="72.39" y="153.67"/>
 </segment>
 </net>
 <net name="3.3V" class="0">
@@ -15320,20 +15304,20 @@ Pero 2016</text>
 </net>
 <net name="N$17" class="0">
 <segment>
-<pinref part="U5" gate="G$1" pin="PROG"/>
 <wire x1="57.15" y1="151.13" x2="64.77" y2="151.13" width="0.1524" layer="91"/>
 <pinref part="R6" gate="G$1" pin="2"/>
+<pinref part="U5" gate="G$1" pin="PROG"/>
 </segment>
 </net>
 <net name="V_QI_IN" class="0">
 <segment>
-<pinref part="U5" gate="G$1" pin="VIN"/>
 <wire x1="36.83" y1="153.67" x2="31.75" y2="153.67" width="0.1524" layer="91"/>
 <wire x1="31.75" y1="148.59" x2="31.75" y2="153.67" width="0.1524" layer="91"/>
 <pinref part="C15" gate="G$1" pin="+"/>
 <wire x1="31.75" y1="153.67" x2="24.13" y2="153.67" width="0.1524" layer="91"/>
 <junction x="31.75" y="153.67"/>
 <label x="24.13" y="153.67" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="U5" gate="G$1" pin="VIN"/>
 </segment>
 </net>
 <net name="PWM" class="0">
@@ -15440,6 +15424,62 @@ Pero 2016</text>
 <segment>
 <pinref part="U2" gate="G$1" pin="OUT"/>
 <pinref part="L2" gate="G$1" pin="1"/>
+</segment>
+</net>
+<net name="+5V" class="0">
+<segment>
+<wire x1="92.71" y1="153.67" x2="102.87" y2="153.67" width="0.1524" layer="91"/>
+<wire x1="102.87" y1="153.67" x2="105.41" y2="153.67" width="0.1524" layer="91"/>
+<junction x="92.71" y="153.67"/>
+<pinref part="U2" gate="G$1" pin="IN"/>
+<pinref part="C8" gate="G$1" pin="1"/>
+<wire x1="92.71" y1="148.59" x2="92.71" y2="153.67" width="0.1524" layer="91"/>
+<pinref part="U2" gate="G$1" pin="EN"/>
+<wire x1="102.87" y1="148.59" x2="105.41" y2="148.59" width="0.1524" layer="91"/>
+<wire x1="102.87" y1="148.59" x2="102.87" y2="153.67" width="0.1524" layer="91"/>
+<junction x="102.87" y="153.67"/>
+<pinref part="J2" gate="G$1" pin="+"/>
+<wire x1="74.93" y1="146.05" x2="72.39" y2="146.05" width="0.1524" layer="91"/>
+<wire x1="72.39" y1="146.05" x2="72.39" y2="153.67" width="0.1524" layer="91"/>
+<wire x1="72.39" y1="153.67" x2="92.71" y2="153.67" width="0.1524" layer="91"/>
+<wire x1="92.71" y1="156.21" x2="92.71" y2="153.67" width="0.1524" layer="91"/>
+<pinref part="P+1" gate="1" pin="+5V"/>
+<pinref part="U5" gate="G$1" pin="VBAT"/>
+<wire x1="72.39" y1="153.67" x2="57.15" y2="153.67" width="0.1524" layer="91"/>
+<junction x="72.39" y="153.67"/>
+</segment>
+<segment>
+<pinref part="SJ2" gate="G$1" pin="3"/>
+<wire x1="226.06" y1="139.7" x2="226.06" y2="142.24" width="0.1524" layer="91"/>
+<pinref part="P+2" gate="1" pin="+5V"/>
+</segment>
+<segment>
+<pinref part="C1" gate="G$1" pin="1"/>
+<wire x1="162.56" y1="129.54" x2="162.56" y2="139.7" width="0.1524" layer="91"/>
+<pinref part="L1" gate="G$1" pin="1"/>
+<wire x1="162.56" y1="139.7" x2="162.56" y2="141.986" width="0.1524" layer="91"/>
+<wire x1="162.56" y1="139.7" x2="170.18" y2="139.7" width="0.1524" layer="91"/>
+<junction x="162.56" y="139.7"/>
+<pinref part="U6" gate="G$1" pin="VIN"/>
+<wire x1="170.18" y1="139.7" x2="177.8" y2="139.7" width="0.1524" layer="91"/>
+<wire x1="170.18" y1="132.08" x2="170.18" y2="139.7" width="0.1524" layer="91"/>
+<junction x="170.18" y="139.7"/>
+<pinref part="P+3" gate="1" pin="+5V"/>
+</segment>
+<segment>
+<pinref part="JP2" gate="J$1" pin="2"/>
+<wire x1="162.56" y1="60.96" x2="162.56" y2="63.246" width="0.1524" layer="91"/>
+<wire x1="177.8" y1="60.96" x2="162.56" y2="60.96" width="0.1524" layer="91"/>
+<pinref part="C14" gate="G$1" pin="+"/>
+<wire x1="162.56" y1="60.96" x2="162.56" y2="55.88" width="0.1524" layer="91"/>
+<junction x="162.56" y="60.96"/>
+<pinref part="P+4" gate="1" pin="+5V"/>
+</segment>
+<segment>
+<pinref part="J1" gate="G$1" pin="2"/>
+<wire x1="96.52" y1="114.3" x2="101.6" y2="114.3" width="0.1524" layer="91"/>
+<wire x1="101.6" y1="114.3" x2="101.6" y2="119.38" width="0.1524" layer="91"/>
+<pinref part="P+5" gate="1" pin="+5V"/>
 </segment>
 </net>
 </nets>
@@ -16584,6 +16624,25 @@ Pero 2016</text>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="104,2,257.81,172.72,U4,PGND_2,GND,,,"/>
+<approved hash="104,2,257.81,170.18,U4,PGND,GND,,,"/>
+<approved hash="104,2,128.27,172.72,U7,PGND_2,GND,,,"/>
+<approved hash="104,2,128.27,170.18,U7,PGND,GND,,,"/>
+<approved hash="104,2,128.27,73.66,U8,PGND_2,GND,,,"/>
+<approved hash="104,2,128.27,71.12,U8,PGND,GND,,,"/>
+<approved hash="104,2,257.81,73.66,U9,PGND_2,GND,,,"/>
+<approved hash="104,2,257.81,71.12,U9,PGND,GND,,,"/>
+<approved hash="104,1,115.57,72.39,U1,VCC,3.3V,,,"/>
+<approved hash="104,1,170.18,132.08,U6,VIN,+5V,,,"/>
+<approved hash="104,1,36.83,153.67,U5,VIN,V_QI_IN,,,"/>
+<approved hash="104,1,57.15,153.67,U5,VBAT,+5V,,,"/>
+<approved hash="104,1,57.15,148.59,U5,VSS,GND,,,"/>
+<approved hash="113,2,193.571,130.071,FRAME1,,,,,"/>
+<approved hash="113,1,212.164,96.52,SJ1,,,,,"/>
+<approved hash="113,1,220.98,138.504,SJ2,,,,,"/>
+<approved hash="113,1,130.071,89.431,FRAME3,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 <compatibility>
