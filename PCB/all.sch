@@ -156,199 +156,6 @@
 <libraries>
 <library name="SparkFun">
 <packages>
-<package name="1206">
-<wire x1="-2.473" y1="0.983" x2="2.473" y2="0.983" width="0.0508" layer="39"/>
-<wire x1="2.473" y1="-0.983" x2="-2.473" y2="-0.983" width="0.0508" layer="39"/>
-<wire x1="-2.473" y1="-0.983" x2="-2.473" y2="0.983" width="0.0508" layer="39"/>
-<wire x1="2.473" y1="0.983" x2="2.473" y2="-0.983" width="0.0508" layer="39"/>
-<wire x1="-0.965" y1="0.787" x2="0.965" y2="0.787" width="0.1016" layer="51"/>
-<wire x1="-0.965" y1="-0.787" x2="0.965" y2="-0.787" width="0.1016" layer="51"/>
-<smd name="1" x="-1.4" y="0" dx="1.6" dy="1.8" layer="1"/>
-<smd name="2" x="1.4" y="0" dx="1.6" dy="1.8" layer="1"/>
-<text x="-1.27" y="1.143" size="0.4064" layer="25">&gt;NAME</text>
-<text x="-1.397" y="-1.524" size="0.4064" layer="27">&gt;VALUE</text>
-<rectangle x1="-1.7018" y1="-0.8509" x2="-0.9517" y2="0.8491" layer="51"/>
-<rectangle x1="0.9517" y1="-0.8491" x2="1.7018" y2="0.8509" layer="51"/>
-<rectangle x1="-0.1999" y1="-0.4001" x2="0.1999" y2="0.4001" layer="35"/>
-</package>
-<package name="0805">
-<wire x1="-0.3" y1="0.6" x2="0.3" y2="0.6" width="0.1524" layer="21"/>
-<wire x1="-0.3" y1="-0.6" x2="0.3" y2="-0.6" width="0.1524" layer="21"/>
-<smd name="1" x="-0.9" y="0" dx="0.8" dy="1.2" layer="1"/>
-<smd name="2" x="0.9" y="0" dx="0.8" dy="1.2" layer="1"/>
-<text x="-0.762" y="0.8255" size="0.4064" layer="25">&gt;NAME</text>
-<text x="-1.016" y="-1.397" size="0.4064" layer="27">&gt;VALUE</text>
-</package>
-<package name="CAP-PTH-SMALL">
-<wire x1="1.27" y1="0.635" x2="1.27" y2="-0.635" width="0.2032" layer="21"/>
-<pad name="1" x="0" y="0" drill="0.7" diameter="1.651"/>
-<pad name="2" x="2.54" y="0" drill="0.7" diameter="1.651"/>
-<text x="0.508" y="1.27" size="0.4064" layer="25">&gt;Name</text>
-<text x="0.254" y="-1.524" size="0.4064" layer="27">&gt;Value</text>
-</package>
-<package name="CAP-PTH-SMALL2">
-<wire x1="1.27" y1="0.635" x2="1.27" y2="-0.635" width="0.2032" layer="21"/>
-<wire x1="-1.27" y1="1.27" x2="3.81" y2="1.27" width="0.2032" layer="21"/>
-<wire x1="3.81" y1="1.27" x2="3.81" y2="-1.27" width="0.2032" layer="21"/>
-<wire x1="3.81" y1="-1.27" x2="-1.27" y2="-1.27" width="0.2032" layer="21"/>
-<wire x1="-1.27" y1="-1.27" x2="-1.27" y2="1.27" width="0.2032" layer="21"/>
-<pad name="1" x="0" y="0" drill="0.7" diameter="1.651"/>
-<pad name="2" x="2.54" y="0" drill="0.7" diameter="1.651"/>
-<text x="-1.27" y="1.905" size="0.6096" layer="25">&gt;Name</text>
-<text x="-1.27" y="-2.54" size="0.6096" layer="27">&gt;Value</text>
-</package>
-<package name="CAP-PTH-LARGE">
-<wire x1="0" y1="0.635" x2="0" y2="0" width="0.2032" layer="21"/>
-<wire x1="0" y1="0" x2="0" y2="-0.635" width="0.2032" layer="21"/>
-<wire x1="0" y1="0" x2="-2.54" y2="0" width="0.2032" layer="21"/>
-<wire x1="0" y1="0" x2="2.54" y2="0" width="0.2032" layer="21"/>
-<pad name="1" x="-4.826" y="0" drill="0.9" diameter="1.905"/>
-<pad name="2" x="4.572" y="0" drill="0.9" diameter="1.905"/>
-<text x="-0.762" y="1.27" size="0.4064" layer="25">&gt;Name</text>
-<text x="-1.016" y="-1.524" size="0.4064" layer="27">&gt;Value</text>
-</package>
-<package name="GRM43D">
-<wire x1="2.25" y1="1.6" x2="1.1" y2="1.6" width="0.127" layer="51"/>
-<wire x1="1.1" y1="1.6" x2="-1.1" y2="1.6" width="0.127" layer="51"/>
-<wire x1="-1.1" y1="1.6" x2="-2.25" y2="1.6" width="0.127" layer="51"/>
-<wire x1="-2.25" y1="1.6" x2="-2.25" y2="-1.6" width="0.127" layer="51"/>
-<wire x1="-2.25" y1="-1.6" x2="-1.1" y2="-1.6" width="0.127" layer="51"/>
-<wire x1="-1.1" y1="-1.6" x2="1.1" y2="-1.6" width="0.127" layer="51"/>
-<wire x1="1.1" y1="-1.6" x2="2.25" y2="-1.6" width="0.127" layer="51"/>
-<wire x1="2.25" y1="-1.6" x2="2.25" y2="1.6" width="0.127" layer="51"/>
-<wire x1="1.1" y1="1.6" x2="1.1" y2="-1.6" width="0.127" layer="51"/>
-<wire x1="-1.1" y1="1.6" x2="-1.1" y2="-1.6" width="0.127" layer="51"/>
-<wire x1="-2.3" y1="1.8" x2="2.3" y2="1.8" width="0.127" layer="21"/>
-<wire x1="-2.3" y1="-1.8" x2="2.3" y2="-1.8" width="0.127" layer="21"/>
-<smd name="A" x="1.927" y="0" dx="3.2" dy="1.65" layer="1" rot="R90"/>
-<smd name="C" x="-1.927" y="0" dx="3.2" dy="1.65" layer="1" rot="R90"/>
-<text x="-2" y="2" size="0.4064" layer="25">&gt;NAME</text>
-<text x="0" y="-2" size="0.4064" layer="27" rot="R180">&gt;VALUE</text>
-<rectangle x1="-2.2" y1="-1.6" x2="-1.1" y2="1.6" layer="51"/>
-<rectangle x1="1.1" y1="-1.6" x2="2.2" y2="1.6" layer="51"/>
-</package>
-<package name="0603-CAP">
-<wire x1="-1.473" y1="0.983" x2="1.473" y2="0.983" width="0.0508" layer="39"/>
-<wire x1="1.473" y1="0.983" x2="1.473" y2="-0.983" width="0.0508" layer="39"/>
-<wire x1="1.473" y1="-0.983" x2="-1.473" y2="-0.983" width="0.0508" layer="39"/>
-<wire x1="-1.473" y1="-0.983" x2="-1.473" y2="0.983" width="0.0508" layer="39"/>
-<wire x1="-0.356" y1="0.432" x2="0.356" y2="0.432" width="0.1016" layer="51"/>
-<wire x1="-0.356" y1="-0.419" x2="0.356" y2="-0.419" width="0.1016" layer="51"/>
-<wire x1="0" y1="0.0305" x2="0" y2="-0.0305" width="0.5588" layer="21"/>
-<smd name="1" x="-0.85" y="0" dx="1.1" dy="1" layer="1"/>
-<smd name="2" x="0.85" y="0" dx="1.1" dy="1" layer="1"/>
-<text x="-0.889" y="0.762" size="0.4064" layer="25" font="vector">&gt;NAME</text>
-<text x="-1.016" y="-1.143" size="0.4064" layer="27" font="vector">&gt;VALUE</text>
-<rectangle x1="-0.8382" y1="-0.4699" x2="-0.3381" y2="0.4801" layer="51"/>
-<rectangle x1="0.3302" y1="-0.4699" x2="0.8303" y2="0.4801" layer="51"/>
-<rectangle x1="-0.1999" y1="-0.3" x2="0.1999" y2="0.3" layer="35"/>
-</package>
-<package name="0402-CAP">
-<description>&lt;b&gt;CAPACITOR&lt;/b&gt;&lt;p&gt;
-chip</description>
-<wire x1="-0.245" y1="0.224" x2="0.245" y2="0.224" width="0.1524" layer="51"/>
-<wire x1="0.245" y1="-0.224" x2="-0.245" y2="-0.224" width="0.1524" layer="51"/>
-<wire x1="-1.473" y1="0.483" x2="1.473" y2="0.483" width="0.0508" layer="39"/>
-<wire x1="1.473" y1="0.483" x2="1.473" y2="-0.483" width="0.0508" layer="39"/>
-<wire x1="1.473" y1="-0.483" x2="-1.473" y2="-0.483" width="0.0508" layer="39"/>
-<wire x1="-1.473" y1="-0.483" x2="-1.473" y2="0.483" width="0.0508" layer="39"/>
-<wire x1="0" y1="0.0305" x2="0" y2="-0.0305" width="0.4064" layer="21"/>
-<smd name="1" x="-0.65" y="0" dx="0.7" dy="0.9" layer="1"/>
-<smd name="2" x="0.65" y="0" dx="0.7" dy="0.9" layer="1"/>
-<text x="-0.889" y="0.6985" size="0.4064" layer="25">&gt;NAME</text>
-<text x="-1.0795" y="-1.143" size="0.4064" layer="27">&gt;VALUE</text>
-<rectangle x1="-0.554" y1="-0.3048" x2="-0.254" y2="0.2951" layer="51"/>
-<rectangle x1="0.2588" y1="-0.3048" x2="0.5588" y2="0.2951" layer="51"/>
-<rectangle x1="-0.1999" y1="-0.3" x2="0.1999" y2="0.3" layer="35"/>
-</package>
-<package name="CAP-PTH-5MM">
-<wire x1="0" y1="0.635" x2="0" y2="-0.635" width="0.2032" layer="21"/>
-<pad name="1" x="-2.5" y="0" drill="0.7" diameter="1.651"/>
-<pad name="2" x="2.5" y="0" drill="0.7" diameter="1.651"/>
-<text x="-0.762" y="1.27" size="0.4064" layer="25">&gt;Name</text>
-<text x="-1.016" y="-1.524" size="0.4064" layer="27">&gt;Value</text>
-</package>
-<package name="AXIAL-5MM">
-<wire x1="-1.14" y1="0.762" x2="1.14" y2="0.762" width="0.2032" layer="21"/>
-<wire x1="1.14" y1="0.762" x2="1.14" y2="0" width="0.2032" layer="21"/>
-<wire x1="1.14" y1="0" x2="1.14" y2="-0.762" width="0.2032" layer="21"/>
-<wire x1="1.14" y1="-0.762" x2="-1.14" y2="-0.762" width="0.2032" layer="21"/>
-<wire x1="-1.14" y1="-0.762" x2="-1.14" y2="0" width="0.2032" layer="21"/>
-<wire x1="-1.14" y1="0" x2="-1.14" y2="0.762" width="0.2032" layer="21"/>
-<wire x1="1.14" y1="0" x2="1.394" y2="0" width="0.2032" layer="21"/>
-<wire x1="-1.14" y1="0" x2="-1.394" y2="0" width="0.2032" layer="21"/>
-<pad name="P$1" x="-2.5" y="0" drill="0.9" diameter="1.8796"/>
-<pad name="P$2" x="2.5" y="0" drill="0.9" diameter="1.8796"/>
-<text x="-2.54" y="1.17" size="0.4" layer="25">&gt;Name</text>
-<text x="-1.032" y="-0.208" size="0.4" layer="21" ratio="15">&gt;Value</text>
-</package>
-<package name="1210">
-<wire x1="-1.6" y1="1.3" x2="1.6" y2="1.3" width="0.127" layer="51"/>
-<wire x1="1.6" y1="1.3" x2="1.6" y2="-1.3" width="0.127" layer="51"/>
-<wire x1="1.6" y1="-1.3" x2="-1.6" y2="-1.3" width="0.127" layer="51"/>
-<wire x1="-1.6" y1="-1.3" x2="-1.6" y2="1.3" width="0.127" layer="51"/>
-<wire x1="-1.6" y1="1.3" x2="1.6" y2="1.3" width="0.2032" layer="21"/>
-<wire x1="-1.6" y1="-1.3" x2="1.6" y2="-1.3" width="0.2032" layer="21"/>
-<smd name="1" x="-1.6" y="0" dx="1.2" dy="2" layer="1"/>
-<smd name="2" x="1.6" y="0" dx="1.2" dy="2" layer="1"/>
-<text x="-0.8" y="0.5" size="0.4064" layer="25">&gt;NAME</text>
-<text x="-0.9" y="-0.7" size="0.4064" layer="27">&gt;VALUE</text>
-</package>
-<package name="CTZ3">
-<description>CTZ3 Series land pattern for variable capacitor - CTZ3E-50C-W1-PF</description>
-<wire x1="-1.6" y1="1.4" x2="-1.6" y2="-2.25" width="0.127" layer="51"/>
-<wire x1="-1.6" y1="-2.25" x2="1.6" y2="-2.25" width="0.127" layer="51"/>
-<wire x1="1.6" y1="1.4" x2="1.6" y2="-2.25" width="0.127" layer="51"/>
-<wire x1="-0.5" y1="0" x2="0.5" y2="0" width="0.127" layer="51"/>
-<wire x1="-1.6" y1="1.4" x2="-1" y2="2.2" width="0.127" layer="51"/>
-<wire x1="1.6" y1="1.4" x2="1" y2="2.2" width="0.127" layer="51"/>
-<wire x1="-1" y1="2.2" x2="1" y2="2.2" width="0.127" layer="51"/>
-<wire x1="0" y1="0.8" x2="0" y2="-0.8" width="0.127" layer="51"/>
-<wire x1="-0.8" y1="0" x2="0.8" y2="0" width="0.127" layer="51"/>
-<wire x1="-1.05" y1="2.25" x2="-1.7" y2="1.45" width="0.127" layer="21"/>
-<wire x1="-1.7" y1="1.45" x2="-1.7" y2="-2.35" width="0.127" layer="21"/>
-<wire x1="-1.7" y1="-2.35" x2="-1.05" y2="-2.35" width="0.127" layer="21"/>
-<wire x1="1.05" y1="2.25" x2="1.7" y2="1.4" width="0.127" layer="21"/>
-<wire x1="1.7" y1="1.4" x2="1.7" y2="-2.35" width="0.127" layer="21"/>
-<wire x1="1.7" y1="-2.35" x2="1.05" y2="-2.35" width="0.127" layer="21"/>
-<smd name="+" x="0" y="2.05" dx="1.5" dy="1.2" layer="1"/>
-<smd name="-" x="0" y="-2.05" dx="1.5" dy="1.2" layer="1"/>
-<text x="-2" y="3" size="0.4064" layer="25">&gt;NAME</text>
-<text x="-2" y="-3.4" size="0.4064" layer="27">&gt;VALUE</text>
-</package>
-<package name="CAP-PTH-SMALL-KIT">
-<wire x1="0" y1="0.635" x2="0" y2="-0.635" width="0.254" layer="21"/>
-<wire x1="-2.667" y1="1.27" x2="2.667" y2="1.27" width="0.254" layer="21"/>
-<wire x1="2.667" y1="1.27" x2="2.667" y2="-1.27" width="0.254" layer="21"/>
-<wire x1="2.667" y1="-1.27" x2="-2.667" y2="-1.27" width="0.254" layer="21"/>
-<wire x1="-2.667" y1="-1.27" x2="-2.667" y2="1.27" width="0.254" layer="21"/>
-<pad name="1" x="-1.397" y="0" drill="1.016" diameter="2.032" stop="no"/>
-<pad name="2" x="1.397" y="0" drill="1.016" diameter="2.032" stop="no"/>
-<polygon width="0.127" layer="30">
-<vertex x="-1.4021" y="-0.9475" curve="-90"/>
-<vertex x="-2.357" y="-0.0178" curve="-90.011749"/>
-<vertex x="-1.4046" y="0.9576" curve="-90"/>
-<vertex x="-0.4546" y="-0.0204" curve="-90.024193"/>
-</polygon>
-<polygon width="0.127" layer="29">
-<vertex x="-1.4046" y="-0.4395" curve="-90.012891"/>
-<vertex x="-1.8491" y="-0.0153" curve="-90"/>
-<vertex x="-1.4046" y="0.452" curve="-90"/>
-<vertex x="-0.9627" y="-0.0051" curve="-90.012967"/>
-</polygon>
-<polygon width="0.127" layer="30">
-<vertex x="1.397" y="-0.9475" curve="-90"/>
-<vertex x="0.4421" y="-0.0178" curve="-90.011749"/>
-<vertex x="1.3945" y="0.9576" curve="-90"/>
-<vertex x="2.3445" y="-0.0204" curve="-90.024193"/>
-</polygon>
-<polygon width="0.127" layer="29">
-<vertex x="1.3945" y="-0.4395" curve="-90.012891"/>
-<vertex x="0.95" y="-0.0153" curve="-90"/>
-<vertex x="1.3945" y="0.452" curve="-90"/>
-<vertex x="1.8364" y="-0.0051" curve="-90.012967"/>
-</polygon>
-</package>
 <package name="EIA3216">
 <wire x1="-1" y1="-1.2" x2="-2.5" y2="-1.2" width="0.2032" layer="21"/>
 <wire x1="-2.5" y1="-1.2" x2="-2.5" y2="1.2" width="0.2032" layer="21"/>
@@ -837,16 +644,6 @@ chip</description>
 <text x="-2.54" y="-2.54" size="1.778" layer="96">&gt;VALUE</text>
 <pin name="GND" x="0" y="2.54" visible="off" length="short" direction="sup" rot="R270"/>
 </symbol>
-<symbol name="CAP">
-<wire x1="0" y1="2.54" x2="0" y2="2.032" width="0.1524" layer="94"/>
-<wire x1="0" y1="0" x2="0" y2="0.508" width="0.1524" layer="94"/>
-<text x="1.524" y="2.921" size="1.778" layer="95">&gt;NAME</text>
-<text x="1.524" y="-2.159" size="1.778" layer="96">&gt;VALUE</text>
-<rectangle x1="-2.032" y1="0.508" x2="2.032" y2="1.016" layer="94"/>
-<rectangle x1="-2.032" y1="1.524" x2="2.032" y2="2.032" layer="94"/>
-<pin name="1" x="0" y="5.08" visible="off" length="short" direction="pas" swaplevel="1" rot="R270"/>
-<pin name="2" x="0" y="-2.54" visible="off" length="short" direction="pas" swaplevel="1" rot="R90"/>
-</symbol>
 <symbol name="5V">
 <wire x1="0.762" y1="1.27" x2="0" y2="2.54" width="0.254" layer="94"/>
 <wire x1="0" y1="2.54" x2="-0.762" y2="1.27" width="0.254" layer="94"/>
@@ -900,132 +697,6 @@ chip</description>
 </gates>
 <devices>
 <device name="">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="CAP" prefix="C" uservalue="yes">
-<description>&lt;b&gt;Capacitor&lt;/b&gt;
-Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
-<gates>
-<gate name="G$1" symbol="CAP" x="0" y="0"/>
-</gates>
-<devices>
-<device name="PTH" package="CAP-PTH-SMALL">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="PTH2" package="CAP-PTH-SMALL2">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="0805" package="0805">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="PTH3" package="CAP-PTH-LARGE">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="SMD" package="GRM43D">
-<connects>
-<connect gate="G$1" pin="1" pad="A"/>
-<connect gate="G$1" pin="2" pad="C"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="0603-CAP" package="0603-CAP">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="0402-CAP" package="0402-CAP">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="PTH1" package="CAP-PTH-5MM">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="_" package="AXIAL-5MM">
-<connects>
-<connect gate="G$1" pin="1" pad="P$1"/>
-<connect gate="G$1" pin="2" pad="P$2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="1210" package="1210">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="1206" package="1206">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="ASMD" package="CTZ3">
-<connects>
-<connect gate="G$1" pin="1" pad="+"/>
-<connect gate="G$1" pin="2" pad="-"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="KIT" package="CAP-PTH-SMALL-KIT">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
 <technologies>
 <technology name=""/>
 </technologies>
@@ -14950,23 +14621,23 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <part name="U$3" library="SparkFun" deviceset="5V" device=""/>
 <part name="3V3" library="SparkFun" deviceset="3.3V" device=""/>
 <part name="GND8" library="SparkFun" deviceset="GND" device=""/>
-<part name="C5" library="rcl" deviceset="C-EU" device="C0603" value="10μF"/>
+<part name="C5" library="rcl" deviceset="C-EU" device="C0603K" value="10μF"/>
 <part name="GND9" library="SparkFun" deviceset="GND" device=""/>
-<part name="C6" library="rcl" deviceset="C-EU" device="C0402" value="0.1μF"/>
-<part name="C7" library="rcl" deviceset="C-EU" device="C0402" value="0.1μF"/>
-<part name="C8" library="rcl" deviceset="C-EU" device="C0402" value="4.7μF"/>
+<part name="C6" library="rcl" deviceset="C-EU" device="C0603K" value="0.1μF"/>
+<part name="C7" library="rcl" deviceset="C-EU" device="C0603K" value="0.1μF"/>
+<part name="C8" library="rcl" deviceset="C-EU" device="C0603K" value="4.7μF"/>
 <part name="GND10" library="SparkFun" deviceset="GND" device=""/>
 <part name="GND11" library="SparkFun" deviceset="GND" device=""/>
 <part name="GND12" library="SparkFun" deviceset="GND" device=""/>
 <part name="J1" library="SparkFun" deviceset="AVR_SPI_PRG_6" device="PTH" value="ISP Programmer"/>
 <part name="GND13" library="SparkFun" deviceset="GND" device=""/>
-<part name="C9" library="rcl" deviceset="C-EU" device="C0402" value="0.1μF"/>
+<part name="C9" library="rcl" deviceset="C-EU" device="C0603K" value="0.1μF"/>
 <part name="GND14" library="SparkFun" deviceset="GND" device=""/>
 <part name="GND15" library="SparkFun" deviceset="GND" device=""/>
-<part name="C10" library="rcl" deviceset="C-EU" device="C0402" value="0.1μF"/>
-<part name="C11" library="rcl" deviceset="C-EU" device="C0402" value="2.2nF"/>
-<part name="C12" library="rcl" deviceset="C-EU" device="C0402" value="0.1μF"/>
-<part name="C13" library="SparkFun" deviceset="CAP" device="0603-CAP" value="10nF"/>
+<part name="C10" library="rcl" deviceset="C-EU" device="C0603K" value="0.1μF"/>
+<part name="C11" library="rcl" deviceset="C-EU" device="C0603K" value="2.2nF"/>
+<part name="C12" library="rcl" deviceset="C-EU" device="C0603K" value="0.1μF"/>
+<part name="C13" library="rcl" deviceset="C-EU" device="C0603K" value="10nF"/>
 <part name="GND16" library="SparkFun" deviceset="GND" device=""/>
 <part name="GND17" library="SparkFun" deviceset="GND" device=""/>
 <part name="U3" library="Testing" deviceset="MPU-6050" device="-1"/>
@@ -15001,27 +14672,27 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <part name="R6" library="rcl" deviceset="R-EU_" device="R0603" value="10k"/>
 <part name="J2" library="pero_library" deviceset="LIPO-BATTERY-CONNECTOR" device=""/>
 <part name="L1" library="SparkFun-Passives" deviceset="INDUCTOR" device="SDR0403-560KL" value="22uH"/>
-<part name="C17" library="rcl" deviceset="C-EU" device="C0603" value="1 μF"/>
+<part name="C17" library="rcl" deviceset="C-EU" device="C0603K" value="1 μF"/>
 <part name="GND30" library="SparkFun" deviceset="GND" device=""/>
 <part name="D3" library="diode" deviceset="SMF5.0AT1" device=""/>
 <part name="U4" library="pero_library" deviceset="BQ51013B_RHL_20" device=""/>
 <part name="J3" library="SparkFun-Connectors" deviceset="M02" device="PTH2"/>
-<part name="CS" library="rcl" deviceset="C-EU" device="C0603" value="18pF"/>
-<part name="CP1" library="rcl" deviceset="C-EU" device="C0603" value="18pF"/>
-<part name="CS1" library="rcl" deviceset="C-EU" device="C0603" value="10nF"/>
-<part name="CS2" library="rcl" deviceset="C-EU" device="C0603" value="10nF"/>
-<part name="CS3" library="rcl" deviceset="C-EU" device="C0603" value="0.47μF"/>
-<part name="CS4" library="rcl" deviceset="C-EU" device="C0603" value="22nF"/>
-<part name="CS5" library="rcl" deviceset="C-EU" device="C0603" value="0.47μF"/>
-<part name="CS6" library="rcl" deviceset="C-EU" device="C0603" value="22nF"/>
-<part name="CP2" library="rcl" deviceset="C-EU" device="C0603" value="18pF"/>
-<part name="CS7" library="rcl" deviceset="C-EU" device="C0603" value="18pF"/>
+<part name="CS" library="rcl" deviceset="C-EU" device="C0603K" value="18pF"/>
+<part name="CP1" library="rcl" deviceset="C-EU" device="C0603K" value="18pF"/>
+<part name="CS1" library="rcl" deviceset="C-EU" device="C0603K" value="10nF"/>
+<part name="CS2" library="rcl" deviceset="C-EU" device="C0603K" value="10nF"/>
+<part name="CS3" library="rcl" deviceset="C-EU" device="C0603K" value="0.47μF"/>
+<part name="CS4" library="rcl" deviceset="C-EU" device="C0603K" value="22nF"/>
+<part name="CS5" library="rcl" deviceset="C-EU" device="C0603K" value="0.47μF"/>
+<part name="CS6" library="rcl" deviceset="C-EU" device="C0603K" value="22nF"/>
+<part name="CP2" library="rcl" deviceset="C-EU" device="C0603K" value="18pF"/>
+<part name="CS7" library="rcl" deviceset="C-EU" device="C0603K" value="18pF"/>
 <part name="C19" library="SparkFun" deviceset="CAP_POL" device="1206" value="10μF"/>
-<part name="CS8" library="rcl" deviceset="C-EU" device="C0603" value="100nF"/>
+<part name="CS8" library="rcl" deviceset="C-EU" device="C0603K" value="100nF"/>
 <part name="GND5" library="SparkFun" deviceset="GND" device=""/>
 <part name="GND23" library="SparkFun" deviceset="GND" device=""/>
-<part name="C20" library="rcl" deviceset="C-EU" device="C0603" value="10μF"/>
-<part name="CS9" library="rcl" deviceset="C-EU" device="C0603" value="100nF"/>
+<part name="C20" library="rcl" deviceset="C-EU" device="C0603K" value="10μF"/>
+<part name="CS9" library="rcl" deviceset="C-EU" device="C0603K" value="100nF"/>
 <part name="GND31" library="SparkFun" deviceset="GND" device=""/>
 <part name="GND33" library="SparkFun" deviceset="GND" device=""/>
 <part name="R4" library="rcl" deviceset="R-EU_" device="R0603" value="188"/>
@@ -15032,22 +14703,22 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <part name="GND35" library="SparkFun" deviceset="GND" device=""/>
 <part name="U7" library="pero_library" deviceset="BQ51013B_RHL_20" device=""/>
 <part name="J4" library="SparkFun-Connectors" deviceset="M02" device="PTH2"/>
-<part name="CS10" library="rcl" deviceset="C-EU" device="C0603" value="18pF"/>
-<part name="CP3" library="rcl" deviceset="C-EU" device="C0603" value="18pF"/>
-<part name="CS11" library="rcl" deviceset="C-EU" device="C0603" value="10nF"/>
-<part name="CS12" library="rcl" deviceset="C-EU" device="C0603" value="10nF"/>
-<part name="CS13" library="rcl" deviceset="C-EU" device="C0603" value="0.47μF"/>
-<part name="CS14" library="rcl" deviceset="C-EU" device="C0603" value="22nF"/>
-<part name="CS15" library="rcl" deviceset="C-EU" device="C0603" value="0.47μF"/>
-<part name="CS16" library="rcl" deviceset="C-EU" device="C0603" value="22nF"/>
-<part name="CP4" library="rcl" deviceset="C-EU" device="C0603" value="18pF"/>
-<part name="CS17" library="rcl" deviceset="C-EU" device="C0603" value="18pF"/>
+<part name="CS10" library="rcl" deviceset="C-EU" device="C0603K" value="18pF"/>
+<part name="CP3" library="rcl" deviceset="C-EU" device="C0603K" value="18pF"/>
+<part name="CS11" library="rcl" deviceset="C-EU" device="C0603K" value="10nF"/>
+<part name="CS12" library="rcl" deviceset="C-EU" device="C0603K" value="10nF"/>
+<part name="CS13" library="rcl" deviceset="C-EU" device="C0603K" value="0.47μF"/>
+<part name="CS14" library="rcl" deviceset="C-EU" device="C0603K" value="22nF"/>
+<part name="CS15" library="rcl" deviceset="C-EU" device="C0603K" value="0.47μF"/>
+<part name="CS16" library="rcl" deviceset="C-EU" device="C0603K" value="22nF"/>
+<part name="CP4" library="rcl" deviceset="C-EU" device="C0603K" value="18pF"/>
+<part name="CS17" library="rcl" deviceset="C-EU" device="C0603K" value="18pF"/>
 <part name="C18" library="SparkFun" deviceset="CAP_POL" device="1206" value="10μF"/>
 <part name="CS18" library="rcl" deviceset="C-EU" device="C0603" value="100nF"/>
 <part name="GND4" library="SparkFun" deviceset="GND" device=""/>
 <part name="GND36" library="SparkFun" deviceset="GND" device=""/>
-<part name="C22" library="rcl" deviceset="C-EU" device="C0603" value="10μF"/>
-<part name="CS19" library="rcl" deviceset="C-EU" device="C0603" value="100nF"/>
+<part name="C22" library="rcl" deviceset="C-EU" device="C0603K" value="10μF"/>
+<part name="CS19" library="rcl" deviceset="C-EU" device="C0603K" value="100nF"/>
 <part name="GND37" library="SparkFun" deviceset="GND" device=""/>
 <part name="GND39" library="SparkFun" deviceset="GND" device=""/>
 <part name="R2" library="rcl" deviceset="R-EU_" device="R0603" value="188"/>
@@ -15058,22 +14729,22 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <part name="GND42" library="SparkFun" deviceset="GND" device=""/>
 <part name="U8" library="pero_library" deviceset="BQ51013B_RHL_20" device=""/>
 <part name="J5" library="SparkFun-Connectors" deviceset="M02" device="PTH2"/>
-<part name="CS20" library="rcl" deviceset="C-EU" device="C0603" value="18pF"/>
-<part name="CP5" library="rcl" deviceset="C-EU" device="C0603" value="18pF"/>
-<part name="CS21" library="rcl" deviceset="C-EU" device="C0603" value="10nF"/>
-<part name="CS22" library="rcl" deviceset="C-EU" device="C0603" value="10nF"/>
-<part name="CS23" library="rcl" deviceset="C-EU" device="C0603" value="0.47μF"/>
-<part name="CS24" library="rcl" deviceset="C-EU" device="C0603" value="22nF"/>
-<part name="CS25" library="rcl" deviceset="C-EU" device="C0603" value="0.47μF"/>
-<part name="CS26" library="rcl" deviceset="C-EU" device="C0603" value="22nF"/>
-<part name="CP6" library="rcl" deviceset="C-EU" device="C0603" value="18pF"/>
-<part name="CS27" library="rcl" deviceset="C-EU" device="C0603" value="18pF"/>
+<part name="CS20" library="rcl" deviceset="C-EU" device="C0603K" value="18pF"/>
+<part name="CP5" library="rcl" deviceset="C-EU" device="C0603K" value="18pF"/>
+<part name="CS21" library="rcl" deviceset="C-EU" device="C0603K" value="10nF"/>
+<part name="CS22" library="rcl" deviceset="C-EU" device="C0603K" value="10nF"/>
+<part name="CS23" library="rcl" deviceset="C-EU" device="C0603K" value="0.47μF"/>
+<part name="CS24" library="rcl" deviceset="C-EU" device="C0603K" value="22nF"/>
+<part name="CS25" library="rcl" deviceset="C-EU" device="C0603K" value="0.47μF"/>
+<part name="CS26" library="rcl" deviceset="C-EU" device="C0603K" value="22nF"/>
+<part name="CP6" library="rcl" deviceset="C-EU" device="C0603K" value="18pF"/>
+<part name="CS27" library="rcl" deviceset="C-EU" device="C0603K" value="18pF"/>
 <part name="C24" library="SparkFun" deviceset="CAP_POL" device="1206" value="10μF"/>
-<part name="CS28" library="rcl" deviceset="C-EU" device="C0603" value="100nF"/>
+<part name="CS28" library="rcl" deviceset="C-EU" device="C0603K" value="100nF"/>
 <part name="GND43" library="SparkFun" deviceset="GND" device=""/>
 <part name="GND44" library="SparkFun" deviceset="GND" device=""/>
-<part name="C25" library="rcl" deviceset="C-EU" device="C0603" value="10μF"/>
-<part name="CS29" library="rcl" deviceset="C-EU" device="C0603" value="100nF"/>
+<part name="C25" library="rcl" deviceset="C-EU" device="C0603K" value="10μF"/>
+<part name="CS29" library="rcl" deviceset="C-EU" device="C0603K" value="100nF"/>
 <part name="GND45" library="SparkFun" deviceset="GND" device=""/>
 <part name="GND47" library="SparkFun" deviceset="GND" device=""/>
 <part name="R12" library="rcl" deviceset="R-EU_" device="R0603" value="188"/>
@@ -15084,22 +14755,22 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <part name="GND50" library="SparkFun" deviceset="GND" device=""/>
 <part name="U9" library="pero_library" deviceset="BQ51013B_RHL_20" device=""/>
 <part name="J6" library="SparkFun-Connectors" deviceset="M02" device="PTH2"/>
-<part name="CS30" library="rcl" deviceset="C-EU" device="C0603" value="18pF"/>
-<part name="CP7" library="rcl" deviceset="C-EU" device="C0603" value="18pF"/>
-<part name="CS31" library="rcl" deviceset="C-EU" device="C0603" value="10nF"/>
-<part name="CS32" library="rcl" deviceset="C-EU" device="C0603" value="10nF"/>
-<part name="CS33" library="rcl" deviceset="C-EU" device="C0603" value="0.47μF"/>
-<part name="CS34" library="rcl" deviceset="C-EU" device="C0603" value="22nF"/>
-<part name="CS35" library="rcl" deviceset="C-EU" device="C0603" value="0.47μF"/>
-<part name="CS36" library="rcl" deviceset="C-EU" device="C0603" value="22nF"/>
-<part name="CP8" library="rcl" deviceset="C-EU" device="C0603" value="18pF"/>
-<part name="CS37" library="rcl" deviceset="C-EU" device="C0603" value="18pF"/>
+<part name="CS30" library="rcl" deviceset="C-EU" device="C0603K" value="18pF"/>
+<part name="CP7" library="rcl" deviceset="C-EU" device="C0603K" value="18pF"/>
+<part name="CS31" library="rcl" deviceset="C-EU" device="C0603K" value="10nF"/>
+<part name="CS32" library="rcl" deviceset="C-EU" device="C0603K" value="10nF"/>
+<part name="CS33" library="rcl" deviceset="C-EU" device="C0603K" value="0.47μF"/>
+<part name="CS34" library="rcl" deviceset="C-EU" device="C0603K" value="22nF"/>
+<part name="CS35" library="rcl" deviceset="C-EU" device="C0603K" value="0.47μF"/>
+<part name="CS36" library="rcl" deviceset="C-EU" device="C0603K" value="22nF"/>
+<part name="CP8" library="rcl" deviceset="C-EU" device="C0603K" value="18pF"/>
+<part name="CS37" library="rcl" deviceset="C-EU" device="C0603K" value="18pF"/>
 <part name="C27" library="SparkFun" deviceset="CAP_POL" device="1206" value="10μF"/>
-<part name="CS38" library="rcl" deviceset="C-EU" device="C0603" value="100nF"/>
+<part name="CS38" library="rcl" deviceset="C-EU" device="C0603K" value="100nF"/>
 <part name="GND51" library="SparkFun" deviceset="GND" device=""/>
 <part name="GND52" library="SparkFun" deviceset="GND" device=""/>
-<part name="C28" library="rcl" deviceset="C-EU" device="C0603" value="10μF"/>
-<part name="CS39" library="rcl" deviceset="C-EU" device="C0603" value="100nF"/>
+<part name="C28" library="rcl" deviceset="C-EU" device="C0603K" value="10μF"/>
+<part name="CS39" library="rcl" deviceset="C-EU" device="C0603K" value="100nF"/>
 <part name="GND53" library="SparkFun" deviceset="GND" device=""/>
 <part name="GND55" library="SparkFun" deviceset="GND" device=""/>
 <part name="R15" library="rcl" deviceset="R-EU_" device="R0603" value="188"/>
@@ -15121,7 +14792,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <part name="GND3" library="SparkFun" deviceset="GND" device=""/>
 <part name="SJ1" library="SparkFun-Retired" deviceset="SOLDERJUMPER_2WAY" device="PASTE2&amp;3"/>
 <part name="U6" library="pero_library" deviceset="CAT4139" device="" value="CAT4139"/>
-<part name="C1" library="rcl" deviceset="C-EU" device="C0603" value="10μF"/>
+<part name="C1" library="rcl" deviceset="C-EU" device="C0603K" value="10μF"/>
 <part name="GND6" library="SparkFun" deviceset="GND" device=""/>
 <part name="GND7" library="SparkFun" deviceset="GND" device=""/>
 <part name="U$7" library="SparkFun" deviceset="5V" device=""/>
@@ -15306,7 +14977,6 @@ Pero 2016</text>
 <segment>
 <pinref part="GND16" gate="1" pin="GND"/>
 <pinref part="C13" gate="G$1" pin="2"/>
-<wire x1="133.35" y1="16.51" x2="133.35" y2="19.05" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="GND18" gate="1" pin="GND"/>
@@ -15456,6 +15126,14 @@ Pero 2016</text>
 <wire x1="226.06" y1="139.7" x2="226.06" y2="142.24" width="0.1524" layer="91"/>
 <pinref part="U$4" gate="G$1" pin="5V"/>
 </segment>
+<segment>
+<wire x1="74.93" y1="146.05" x2="72.39" y2="146.05" width="0.1524" layer="91"/>
+<wire x1="72.39" y1="146.05" x2="72.39" y2="153.67" width="0.1524" layer="91"/>
+<pinref part="J2" gate="G$1" pin="+"/>
+<wire x1="72.39" y1="153.67" x2="74.93" y2="153.67" width="0.1524" layer="91"/>
+<wire x1="56.896" y1="153.67" x2="72.39" y2="153.67" width="0.1524" layer="91"/>
+<junction x="72.39" y="153.67"/>
+</segment>
 </net>
 <net name="3.3V" class="0">
 <segment>
@@ -15496,7 +15174,7 @@ Pero 2016</text>
 <pinref part="U3" gate="G$1" pin="VLOGIC"/>
 <pinref part="C13" gate="G$1" pin="1"/>
 <wire x1="120.65" y1="29.21" x2="133.35" y2="29.21" width="0.1524" layer="91"/>
-<wire x1="133.35" y1="26.67" x2="133.35" y2="29.21" width="0.1524" layer="91"/>
+<wire x1="133.35" y1="24.13" x2="133.35" y2="29.21" width="0.1524" layer="91"/>
 <wire x1="133.35" y1="29.21" x2="133.35" y2="36.83" width="0.1524" layer="91"/>
 <junction x="133.35" y="29.21"/>
 <pinref part="3V5" gate="G$1" pin="3.3V"/>
@@ -15638,17 +15316,6 @@ Pero 2016</text>
 <pinref part="U3" gate="G$1" pin="REGOUT"/>
 <pinref part="C10" gate="G$1" pin="1"/>
 <wire x1="64.77" y1="31.75" x2="64.77" y2="26.67" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="VBAT" class="0">
-<segment>
-<pinref part="U5" gate="G$1" pin="VBAT"/>
-<wire x1="57.15" y1="153.67" x2="72.39" y2="153.67" width="0.1524" layer="91"/>
-<wire x1="74.93" y1="146.05" x2="72.39" y2="146.05" width="0.1524" layer="91"/>
-<wire x1="72.39" y1="146.05" x2="72.39" y2="153.67" width="0.1524" layer="91"/>
-<pinref part="J2" gate="G$1" pin="+"/>
-<wire x1="72.39" y1="153.67" x2="74.93" y2="153.67" width="0.1524" layer="91"/>
-<junction x="72.39" y="153.67"/>
 </segment>
 </net>
 <net name="N$17" class="0">
