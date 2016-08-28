@@ -6,3 +6,5 @@ PCB/Resources/
 PCB/Datasheets/
 PCB/gerber/
 PCB/OSH gerber/
+
+PCB/*.pdf
