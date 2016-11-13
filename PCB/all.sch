@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -15270,7 +15270,7 @@ Pero 2016</text>
 <attribute name="VALUE" x="63.5" y="86.36" size="1.778" layer="96"/>
 </instance>
 <instance part="C23" gate="G$1" x="73.66" y="68.58" smashed="yes" rot="R90">
-<attribute name="NAME" x="80.01" y="73.025" size="1.778" layer="95" rot="R180"/>
+<attribute name="NAME" x="73.66" y="70.993" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="80.01" y="70.739" size="1.778" layer="96" rot="R180"/>
 </instance>
 <instance part="C3" gate="G$1" x="73.66" y="58.42" smashed="yes" rot="R90">
@@ -15844,13 +15844,11 @@ Pero 2016</text>
 <net name="VUSB" class="0">
 <segment>
 <pinref part="F2" gate="G$1" pin="2"/>
-<wire x1="50.8" y1="73.66" x2="53.34" y2="73.66" width="0.1524" layer="91"/>
-<label x="53.34" y="73.66" size="1.016" layer="95" xref="yes"/>
-<label x="83.82" y="88.9" size="1.016" layer="95" rot="R180" xref="yes"/>
-</segment>
-<segment>
+<label x="83.82" y="88.9" size="1.016" layer="95"/>
 <pinref part="U1" gate="G$1" pin="VBUS"/>
 <wire x1="83.82" y1="88.9" x2="91.44" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="50.8" y1="73.66" x2="83.82" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="83.82" y1="73.66" x2="83.82" y2="88.9" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$80" class="0">
