@@ -4,7 +4,7 @@
 #include <Adafruit_NeoPixel.h>  
 #include<avr/io.h>
 
-#define PIN 6               // Ctrl output for NeoPixel RGB strip
+#define PIN 7               // Ctrl output for NeoPixel RGB strip
 #define WhiteLED 11         // PWM output for white LED
 #define LIGHT_MIN 20        // Minimum value for the white LED output
 // Constants

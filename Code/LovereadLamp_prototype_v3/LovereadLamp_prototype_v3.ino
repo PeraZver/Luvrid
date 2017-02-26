@@ -15,7 +15,7 @@
  *
  *  Pero, February 2016
  */
-#include <Wire.h>
+#include <Wire.h>  
 #include <Adafruit_NeoPixel.h> // library for NeoPixel RGB diode
 #include "MPU6050.h"   // Here is where all registers and control words for MPU6050 are stored
 #include "NeoPixelControl.h"    

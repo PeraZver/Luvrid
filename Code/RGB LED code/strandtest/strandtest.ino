@@ -3,7 +3,7 @@
   #include <avr/power.h>
 #endif
 
-#define PIN 6
+#define PIN 7
 
 // Parameter 1 = number of pixels in strip
 // Parameter 2 = Arduino pin number (most are valid)
@@ -20,6 +20,19 @@ Adafruit_NeoPixel strip = Adafruit_NeoPixel(16, PIN, NEO_GRB + NEO_KHZ800);
 // on a live circuit...if you must, connect GND first.
 
 void setup() {
+      /* Set system clock */
+  CLKSEL0 = 0b00010101;   // Choose Crystal oscillator with BOD
+  CLKSEL1 = 0b00001111;   // 8MHz
+  CLKPR = 0b10000000;     // Change the clock prescaler
+  CLKPR = 0;              // Prescaler is 1.
+
+  /* Disable JTAG interface on PORTF */
+  MCUCR |= (1<<JTD);   // 
+  MCUCR |= (1<<JTD);   // Have to do it twice (datasheet page 328.)
+
+  /* Set buttons */
+  DDRE = 0xff;
+  
   Serial.begin(9600);
   strip.begin();
   strip.show(); // Initialize all pixels to 'off'

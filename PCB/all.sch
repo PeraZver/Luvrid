@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.6.0">
+<eagle version="7.7.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -15153,6 +15153,8 @@ Pero 2016</text>
 <text x="219.71" y="20.32" size="2.54" layer="97">Main circuit</text>
 <text x="208.28" y="134.62" size="1.27" layer="97">I_LED = 0.3V / R19</text>
 <text x="240.284" y="144.272" size="1.27" layer="97">White LED</text>
+<text x="101.6" y="137.16" size="1.778" layer="97">Tako care if regulator end with -ADJ and add
+resistor and capacitors in the feedback!</text>
 </plain>
 <instances>
 <instance part="U2" gate="G$1" x="115.57" y="158.75"/>
@@ -15913,6 +15915,8 @@ Version 2.0
 
 Pero 2016</text>
 <text x="345.44" y="20.32" size="2.54" layer="97">Qi chargers</text>
+<text x="88.9" y="218.44" size="2.54" layer="97">Make sure all capacitors on the RECT pin
+are rated at more than 7V!</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
