@@ -22,6 +22,15 @@
 
 void setup()
 {  
+        /* Set system clock */
+  CLKSEL0 = 0b00010101;   // Choose Crystal oscillator with BOD
+  CLKSEL1 = 0b00001111;   // 8MHz
+  CLKPR = 0b10000000;     // Change the clock prescaler
+  CLKPR = 0;              // Prescaler is 1.
+
+  /* Disable JTAG interface on PORTF */
+  MCUCR |= (1<<JTD);   // 
+  MCUCR |= (1<<JTD);   // Have to do it twice (datasheet page 328.)
   // Initialize LEDs and turn them off.
   pinMode(WhiteLED, OUTPUT);  // Configure White LED as output
   digitalWrite(WhiteLED, LOW);
