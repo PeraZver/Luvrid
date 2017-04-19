@@ -1,6 +1,6 @@
 #include "NeoPixelControl.h"
 
-Adafruit_NeoPixel strip = Adafruit_NeoPixel(16, PIN, NEO_GRB + NEO_KHZ800);  // Class that deals with neopixel
+Adafruit_NeoPixel strip = Adafruit_NeoPixel(16, PIN, NEO_GRB + NEO_KHZ400);  // Class that deals with neopixel
 boolean vertical = LOW;    // Indicates if the lamp is set completely vertical or still rising.
 bool shake = 0;
 uint32_t color = 0x000000FF; // 32-bit color code, upper 8 bits, nothing, next 8 bits: RED, next 8 bits: GREEN, lowest 8 bits: BLUE

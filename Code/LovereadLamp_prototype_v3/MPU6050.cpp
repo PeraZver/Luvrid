@@ -28,23 +28,23 @@ void MPU6050_readOut(){
   int error = 0;
 
   for (int i = 0; i <15; i++) {
+        
+      // Read 14 bytes at once, containing acceleration, temperature and gyro.
+      error = MPU6050_read (MPU6050_ACCEL_XOUT_H, (uint8_t *) &accel_t_gyro, sizeof(accel_t_gyro));
     
-  // Read 14 bytes at once, containing acceleration, temperature and gyro.
-  error = MPU6050_read (MPU6050_ACCEL_XOUT_H, (uint8_t *) &accel_t_gyro, sizeof(accel_t_gyro));
-
-  // Swap all high and low bytes. After this, the registers values are swapped,
-  // so the structure name like x_accel_l does no longer contain the lower byte.
-
-  SWAP (accel_t_gyro.reg.x_accel_h, accel_t_gyro.reg.x_accel_l);
-  SWAP (accel_t_gyro.reg.y_accel_h, accel_t_gyro.reg.y_accel_l);
-  SWAP (accel_t_gyro.reg.z_accel_h, accel_t_gyro.reg.z_accel_l);
-  SWAP (accel_t_gyro.reg.t_h, accel_t_gyro.reg.t_l);
-  SWAP (accel_t_gyro.reg.x_gyro_h, accel_t_gyro.reg.x_gyro_l);
-  SWAP (accel_t_gyro.reg.y_gyro_h, accel_t_gyro.reg.y_gyro_l);
-  SWAP (accel_t_gyro.reg.z_gyro_h, accel_t_gyro.reg.z_gyro_l);
-  //accel_t_gyro.value.z_accel -= 200;  // Compensate for the offset of accellerometer
-  int_acc_z += ((-1*accel_t_gyro.value.z_accel) >> 4);
-  int_gyro_z += (accel_t_gyro.value.z_gyro >> 4);
+      // Swap all high and low bytes. After this, the registers values are swapped,
+      // so the structure name like x_accel_l does no longer contain the lower byte.    
+      SWAP (accel_t_gyro.reg.x_accel_h, accel_t_gyro.reg.x_accel_l);
+      SWAP (accel_t_gyro.reg.y_accel_h, accel_t_gyro.reg.y_accel_l);
+      SWAP (accel_t_gyro.reg.z_accel_h, accel_t_gyro.reg.z_accel_l);
+      SWAP (accel_t_gyro.reg.t_h, accel_t_gyro.reg.t_l);
+      SWAP (accel_t_gyro.reg.x_gyro_h, accel_t_gyro.reg.x_gyro_l);
+      SWAP (accel_t_gyro.reg.y_gyro_h, accel_t_gyro.reg.y_gyro_l);
+      SWAP (accel_t_gyro.reg.z_gyro_h, accel_t_gyro.reg.z_gyro_l);
+      
+      //accel_t_gyro.value.z_accel -= 200;  // Compensate for the offset of accellerometer
+      int_acc_z += ((-1*accel_t_gyro.value.z_accel) >> 4);
+      int_gyro_z += (accel_t_gyro.value.z_gyro >> 4);
   }
 }
 
