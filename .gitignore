@@ -1,4 +1,11 @@
 Code/Themocoupler
+Code/eeprom_test
+Code/Lamp_prototype
+Code/Lamp_prototype_v2
+Code/RGB LED code
+Code/SensorStick
+Code/White LED/pwm_test
+
 PCB/all.s#*
 PCB/all.b#*
 PCB/drilegend.l#*
