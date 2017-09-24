@@ -1,0 +1,12 @@
+MCP73821-2 LiPo charger chip
+
+
+BEFORE CHARGING:
+1. monitor if input voltage is above UVLO (3.4V). If not shutdown mode
+2. monitor if there is battery present: sink 6uA and see if VBat is > Vreg (4.2V), there is no battery. 
+3. if PROG pin is open or floating, dont charge
+
+CHARGING:
+1. Preconditioning: if VBat < preconditioning treshold (66% of 4.2V) supply battery with 10% of Iprog, untill the treshold is reached.
+2. Constant current (Fast charge) mode: Supply battery with Iprog until Vreg (4.2V) is reached
+3. Constant voltage mode: Keep constant voltage at 4.2V until current is 5% of Iprog. 

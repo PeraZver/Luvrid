@@ -15210,7 +15210,7 @@ resistor and capacitors in the feedback!</text>
 <junction x="208.28" y="162.56"/>
 </segment>
 </net>
-<net name="WL_N" class="0">
+<net name="WL_CA" class="0">
 <segment>
 <pinref part="R19" gate="G$1" pin="1"/>
 <wire x1="226.06" y1="144.78" x2="220.98" y2="144.78" width="0.1524" layer="91"/>
@@ -15222,7 +15222,7 @@ resistor and capacitors in the feedback!</text>
 <label x="226.06" y="152.4" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="WL_P" class="0">
+<net name="WL_AN" class="0">
 <segment>
 <pinref part="D3" gate="G$1" pin="C"/>
 <wire x1="215.9" y1="162.56" x2="218.44" y2="162.56" width="0.1524" layer="91"/>
