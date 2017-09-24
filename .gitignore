@@ -1,10 +1,12 @@
 Code/Themocoupler
 Code/eeprom_test
-Code/Lamp_prototype
-Code/Lamp_prototype_v2
+Code/LovereadLamp_prototype
+Code/LovereadLamp_prototype_v2
 Code/RGB LED code
 Code/SensorStick
 Code/White LED/pwm_test
+Code/MPU-6050
+Code/Python tests
 
 PCB/all.s#*
 PCB/all.b#*
